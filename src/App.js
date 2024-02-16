@@ -14,17 +14,12 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
-import Details from './components/details';
-// import Main from './main';
-// import Root from './routes/root';
 import Home from './pages/Home';
 import About from './pages/About';
 import License from './pages/License';
 import Jump from './pages/Jump';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ErrorPage from './pages/error-page';
+import ErrorPage from './pages/ErrorPage';
 import theme from './theme';
 
 const router = createBrowserRouter([

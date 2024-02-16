@@ -17,33 +17,19 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
-import { Logo } from '../Logo';
-import Details from '../components/details';
-import Header from '../components/header';
-import Footer from '../components/footer';
-// import skydivingImage from '/skydiving-photo.jpg';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Flex
-        alignItems="center"
-        // justify="center"
-        height="calc(89vh)"
-        pos="relative"
-      >
+      <Flex alignItems="center" height="calc(89vh)" pos="relative">
         <Image
           src="/assets/background2.png"
           alt="skydiving-photo"
           boxSize="full"
         />
-        {/* <Image
-          src="/assets/stretched-3.png"
-          alt="skydiving-photo"
-          boxSize="full"
-        /> */}
         <VStack pos="absolute" pl="200px" textAlign="left" alignItems="left">
           <Heading fontSize="5xl">Air Bears: Skydiving at Berkeley</Heading>
           <Text fontSize="xl">
@@ -143,24 +129,6 @@ const Home = () => {
           </GridItem>
         </SimpleGrid>
       </Flex>
-      {/* <Flex alignItems="center" justify="center" height="calc(60vh)">
-        <VStack>
-          <Text fontSize="5xl">Sponsors</Text>
-          <Text fontSize="xl">
-            If you are interested in sponsoring AirBears, please contact us
-          </Text>
-          <SimpleGrid
-            columns={2}
-            columnGap={3}
-            rowGap={6}
-            w="full"
-            textAlign="center"
-          >
-            <GridItem colSpan={1}>Photo</GridItem>
-            <GridItem colSpan={1}>Photo</GridItem>
-          </SimpleGrid>
-        </VStack>
-      </Flex> */}
       <Footer />
     </>
   );

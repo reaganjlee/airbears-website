@@ -24,7 +24,6 @@ export default function ErrorPage() {
   return (
     <>
       <Flex
-        id="error-page"
         height="calc(60vh)"
         alignItems="center"
         justify="center"

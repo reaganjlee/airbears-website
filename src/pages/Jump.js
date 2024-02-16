@@ -29,11 +29,11 @@ import {
   TableCaption,
   TableContainer,
 } from '@chakra-ui/react';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import TitleCard from '../components/TitleCard';
 import TimelineRow from '../components/TimelineRow';
-import TableEntry from '../components/tableEntry';
+import TableEntry from '../components/TableEntry';
 
 import {
   FaCar,

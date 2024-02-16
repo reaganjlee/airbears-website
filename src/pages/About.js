@@ -16,13 +16,10 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
-import { Logo } from '../Logo';
-import Details from '../components/details';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import TitleCard from '../components/TitleCard';
-import ProfileCard from '../components/profile-card';
+import ProfileCard from '../components/ProfileCard';
 
 const About = () => {
   return (
@@ -111,53 +108,8 @@ const About = () => {
                 bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
                 img_name="Zane Levine - Licensing Coordinator .png"
               />
-              {/* <img
-                id="photo"
-                height="150px"
-                width="150px"
-                src="https://thecatapi.com/api/images/get?format=src&type=jpg"
-                alt=""
-              /> */}
             </GridItem>
           </SimpleGrid>
-          {/* <Text fontSize="3xl">Alumni</Text>
-          <SimpleGrid
-            columns={2}
-            // columnGap={3}
-            // rowGap={6}
-            w="full"
-            spacingX="180px"
-            spacingY="120px"
-          >
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Reagan Lee"
-                subtitle="This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio"
-                img_name="Reagan Lee-Headshot.jpg"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Reagan Lee"
-                subtitle="This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio"
-                img_name="Reagan Lee-Headshot.jpg"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Reagan Lee"
-                subtitle="This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio"
-                img_name="Reagan Lee-Headshot.jpg"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Reagan Lee"
-                subtitle="This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio This is my bio"
-                img_name="Reagan Lee-Headshot.jpg"
-              />
-            </GridItem>
-          </SimpleGrid> */}
         </VStack>
       </Flex>
       <Footer />
