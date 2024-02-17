@@ -21,6 +21,7 @@ import {
 } from '@chakra-ui/react';
 import TitleCard from '../components/TitleCard';
 import Page from '../components/Page';
+import SectionContent from '../components/SectionContent';
 
 const License = () => {
   return (
@@ -38,7 +39,7 @@ const License = () => {
 
         w="full"
       >
-        <VStack p="30px" m="30px" align="left" fontSize="xl" rounded="lg">
+        {/* <VStack p="30px" m="30px" align="left" fontSize="xl" rounded="lg">
           <Text align="left" fontSize="4xl">
             Getting Your License{' '}
           </Text>
@@ -56,6 +57,27 @@ const License = () => {
             <ListItem fontSize="3xl">A-License</ListItem>
             <Text>After 25 jumps yourself, you're fully certified!</Text>
           </OrderedList>
+        </VStack> */}
+        <VStack w="full">
+          <SectionContent
+            title="Getting your License"
+            subtitle="Getting your solo diving license is a great way to level up your
+              diving. To do so you need to:"
+          />
+          <Text fontSize="3xl">Learn</Text>
+          <Text>Take a jump course</Text>
+          <Text fontSize="3xl">Solo Certification</Text>
+          <Text>8 jumps with a coach, now you can jump alone</Text>
+          <Text fontSize="3xl">A-License</Text>
+          <Text>After 25 jumps yourself, you're fully certified!</Text>
+          {/* <List pl="10px">
+          <ListItem fontSize="3xl">Learn</ListItem>
+          <Text>Take a jump course</Text>
+          <ListItem fontSize="3xl">Solo Certification</ListItem>
+          <Text>8 jumps with a coach, now you can jump alone</Text>
+          <ListItem fontSize="3xl">A-License</ListItem>
+          <Text>After 25 jumps yourself, you're fully certified!</Text>
+          </List> */}
         </VStack>
       </Flex>
       <SimpleGrid columns={2} minH="calc(50vh)" alignItems="center">

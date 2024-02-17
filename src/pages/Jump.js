@@ -32,8 +32,9 @@ import {
 
 import TitleCard from '../components/TitleCard';
 import TimelineRow from '../components/TimelineRow';
-import TableEntry from '../components/TableEntry';
+import { TableEntry, StrikedItem } from '../components/TableUtils';
 import Page from '../components/Page';
+import SectionContent from '../components/SectionContent';
 
 import {
   FaCar,
@@ -93,8 +94,10 @@ const Jump = () => {
         img_name="cover-images/jump-cover"
       />
       <Flex alignItems="center" justify="center" direction="column">
-        <VStack mt="calc(5vh)">
-          <Text fontSize="3xl">What does skydiving look like?</Text>
+        <VStack>
+          <Text fontSize="3xl" pb="4%">
+            What does skydiving look like?
+          </Text>
           <iframe
             width="740"
             height="472"
@@ -108,13 +111,13 @@ const Jump = () => {
       </Flex>
       {/* bg="gray.50" */}
       <VStack pt="30px">
-        {/* <Text fontSize="4xl">SCHEDULE </Text> */}
         <SimpleGrid
           columns={2}
           columnGap={3}
           rowGap={6}
           w="full"
           textAlign="left"
+          alignItems="center"
           // h="calc(80vh)"
 
           // mt="calc(20vh)"
@@ -125,20 +128,25 @@ const Jump = () => {
             alignItems="center"
             justify="center"
           >
-            <VStack rounded="lg" padding="10px">
-              {/* boxShadow="md" */}
+            {/* <VStack rounded="lg" padding="10px">
+
               <Text fontSize="3xl"> Schedule </Text>
               <Text> What does a jump day look like? </Text>
-            </VStack>
+            </VStack> */}
+            <Box alignItems="center" justifyContent="center" align="center">
+              <SectionContent
+                title="Schedule"
+                subtitle="What does a jump day look like?"
+              />
+            </Box>
           </GridItem>
-          <GridItem colSpan={1} textAlign="left" fontSize="calc(2.7vh)">
-            <Flex direction="column">
+          <GridItem colSpan={1}>
+            <Flex justify="center">
               <TimelineRow timelineData={timelineData} />
             </Flex>
           </GridItem>
           <GridItem colSpan={1}>
-            <VStack rounded="lg" padding="10px">
-              {/* boxShadow="md" */}
+            {/* <VStack rounded="lg" padding="10px">
               <Text
                 fontSize="3xl"
                 textAlign="center"
@@ -152,7 +160,11 @@ const Jump = () => {
                 {' '}
                 If you have any questions, please contact us{' '}
               </Text>
-            </VStack>
+            </VStack> */}
+            <SectionContent
+              title="Pricing"
+              subtitle="If you have any questions, please contact us"
+            />
           </GridItem>
           <GridItem
             colSpan={1}
@@ -164,15 +176,19 @@ const Jump = () => {
             pl="30px"
           >
             <Box position="relative">
-              <Card w="100%">
+              <Card>
                 <CardBody>
                   <TableContainer padding="1rem" maxW="100%">
-                    <Table size="md">
+                    <Table size="md" alignItems="center">
                       <Thead>
                         <Tr>
                           <Th></Th>
-                          <Th p="10px">With AirBears</Th>
-                          <Th p="10px">Regular</Th>
+                          <Th textAlign="center" p="10px">
+                            With AirBears
+                          </Th>
+                          <Th textAlign="center" p="10px">
+                            Regular
+                          </Th>
                         </Tr>
                       </Thead>
                       <Tbody>
@@ -188,9 +204,10 @@ const Jump = () => {
                             <Text textAlign="center">$220</Text>
                           </Td>
                           <Td isNumeric>
-                            <Text as="s" textAlign="center">
+                            {/* <Text textAlign="center" as="s">
                               $255
-                            </Text>
+                            </Text> */}
+                            <StrikedItem content="$255" />
                           </Td>
                         </Tr>
                         <Tr>
@@ -204,9 +221,10 @@ const Jump = () => {
                             <Text textAlign="center">$115</Text>
                           </Td>
                           <Td isNumeric>
-                            <Text as="s" textAlign="center">
-                              $130
-                            </Text>
+                            {/* <Box textAlign="center">
+                              <Text as="s">$130</Text>
+                            </Box> */}
+                            <StrikedItem content="$130" />
                           </Td>
                         </Tr>
                         <Tr>
@@ -220,9 +238,10 @@ const Jump = () => {
                             <Text textAlign="center">$0</Text>
                           </Td>
                           <Td isNumeric>
-                            <Text as="s" textAlign="center">
+                            {/* <Text as="s" textAlign="center">
                               $30
-                            </Text>
+                            </Text> */}
+                            <StrikedItem content="$30" />
                           </Td>
                         </Tr>
                       </Tbody>

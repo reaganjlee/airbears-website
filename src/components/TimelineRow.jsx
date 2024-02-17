@@ -19,7 +19,7 @@ function TimelineComponent(props) {
 
   return (
     <Flex justifyContent="start" mb="5px">
-      <Flex direction="column" h="70px">
+      <Flex direction="column" h={index === arrLength - 1 ? '0px' : '70px'}>
         <Icon
           as={logo}
           bg={bgIconColor}
@@ -40,10 +40,10 @@ function TimelineComponent(props) {
         />
       </Flex>
       <Flex direction="column" justifyContent="flex-start" h="100%">
-        <Text fontSize="sm" color={textColor} fontWeight="bold">
+        <Text fontSize="md" color={textColor} fontWeight="bold">
           {title}
         </Text>
-        <Text fontSize="sm" color="gray.400" fontWeight="normal">
+        <Text fontSize="md" color="gray.400" fontWeight="normal">
           {date}
         </Text>
       </Flex>
@@ -52,24 +52,9 @@ function TimelineComponent(props) {
 }
 
 export default function TimelineRow({ timelineData }) {
-  const textColor = useColorModeValue('gray.700', 'white.300');
-  const bgIconColor = useColorModeValue('white.300', 'gray.700');
-  const bg = useColorModeValue('gray.50', 'gray.700');
   return (
-    <Card p="1rem" maxHeight="100%">
-      {/* <CardHeader pt="0px" p="28px 0px 35px 21px">
-        <Flex direction="column">
-          <Text fontSize="lg" color={textColor} fontWeight="bold" pb=".5rem">
-            Schedule
-          </Text>
-          <Text fontSize="sm" color="gray.400" fontWeight="normal">
-            <Text fontWeight="bold" as="span" color="brand.300">
-              What does a jump day look like?
-            </Text>
-          </Text>
-        </Flex>
-      </CardHeader> */}
-      <CardBody ps="26px" pe="0px" mb="31px" position="relative">
+    <Card p="1rem">
+      <CardBody>
         <Flex direction="column">
           {timelineData.map((row, index, arr) => {
             return (

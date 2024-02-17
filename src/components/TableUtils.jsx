@@ -9,7 +9,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 
-export default function tableEntry({ title, subtitle }) {
+export function TableEntry({ title, subtitle }) {
   return (
     <Flex direction="column" justifyContent="flex-start" h="100%">
       <Text>{title}</Text>
@@ -18,9 +18,20 @@ export default function tableEntry({ title, subtitle }) {
         color="gray.400"
         fontWeight="normal"
         whiteSpace="pre-line"
+        pt="3%"
       >
         {subtitle}
       </Text>
     </Flex>
+  );
+}
+
+export function StrikedItem({ content }) {
+  // Theres a bug with the ChakraUI removing alignment
+  // if you use strikethrough, requiring this
+  return (
+    <Box textAlign="center">
+      <Text as="s">{content}</Text>
+    </Box>
   );
 }

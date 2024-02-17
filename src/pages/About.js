@@ -30,7 +30,7 @@ const About = () => {
         img_name="cover-images/mountain-bg"
       />
       <Flex alignItems="center" justify="center">
-        <Text maxW="80%" fontSize="xl" p="calc(5vh)">
+        <Text maxW="80%" fontSize="xl" pb="5vh">
           AirBears at Berkeley is a student-run organization based at the
           University of California, Berkeley dedicated to fostering a community
           of diverse and welcoming individuals by exposing community members to

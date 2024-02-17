@@ -19,29 +19,7 @@ import {
 } from '@chakra-ui/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
-const SectionContent = ({ title, subtitle, btn = 'Learn More' }) => {
-  let btnContent = '';
-  let btnLink = '';
-  if (btn === 'Learn More') {
-    btnContent = 'Learn More';
-    btnLink = 'home-license-btn';
-  } else {
-    btnContent = 'Yay!';
-    btnLink = 'home-license-btn';
-  }
-  return (
-    <VStack alignItems="center" justify="center" w="100%">
-      <Heading fontSize="3xl">{title}</Heading>
-      <Text fontSize="xl" maxW="70%">
-        {subtitle}
-      </Text>
-      <Link pt="10px" key={btnLink}>
-        <Button> {btnContent} </Button>
-      </Link>
-    </VStack>
-  );
-};
+import SectionContent from '../components/SectionContent';
 
 const Home = () => {
   return (
@@ -108,14 +86,19 @@ const Home = () => {
             display="flex"
             justifyContent="center"
           >
-            <SectionContent
-              title="Jump Days"
-              subtitle="
+            <VStack>
+              <SectionContent
+                title="Jump Days"
+                subtitle="
               Have an opportunity to experience the 
               rush of freefall followed by a parachute 
               glide down with an expert diver
               "
-            />
+              />
+              <Link key="home-license-btn">
+                <Button> Learn More </Button>
+              </Link>
+            </VStack>
           </GridItem>
           <GridItem
             colSpan={1}
@@ -123,11 +106,16 @@ const Home = () => {
             display="flex"
             justifyContent="center"
           >
-            <SectionContent
-              title="Getting your License"
-              subtitle="Learn to skydive on your own and potentially teach others how to
+            <VStack>
+              <SectionContent
+                title="Getting your License"
+                subtitle="Learn to skydive on your own and potentially teach others how to
                 skydive as well!"
-            />
+              />
+              <Link key="home-license-btn">
+                <Button> Learn More </Button>
+              </Link>
+            </VStack>
           </GridItem>
           <GridItem colSpan={1}>
             <Flex justifyContent="center">

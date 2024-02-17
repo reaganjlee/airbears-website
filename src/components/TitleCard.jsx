@@ -10,7 +10,7 @@ import {
 
 const TitleCard = ({ title, subtitle, img_name, maxH_vh = 80 }) => {
   return (
-    <Flex alignItems="center" justify="center" flexDirection="column">
+    <Flex alignItems="center" justify="center" flexDirection="column" pb="5vh">
       <Text fontSize="5xl">{title}</Text>
       <Text fontSize="xl" pb={`calc(5vh)`}>
         {subtitle}
