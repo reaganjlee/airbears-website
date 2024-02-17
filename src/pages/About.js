@@ -16,19 +16,18 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 import TitleCard from '../components/TitleCard';
 import ProfileCard from '../components/ProfileCard';
+import Page from '../components/Page';
 
 const About = () => {
   return (
-    <>
-      <Header />
+    <Page>
       <TitleCard
         title="About"
         subtitle="Meet our officers and alumni"
-        img_name="mountain-bg"
+        img_name="cover-images/mountain-bg"
       />
       <Flex alignItems="center" justify="center">
         <Text maxW="80%" fontSize="xl" p="calc(5vh)">
@@ -112,8 +111,7 @@ const About = () => {
           </SimpleGrid>
         </VStack>
       </Flex>
-      <Footer />
-    </>
+    </Page>
   );
 };
 export default About;

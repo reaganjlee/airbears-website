@@ -19,18 +19,16 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import TitleCard from '../components/TitleCard';
+import Page from '../components/Page';
 
 const License = () => {
   return (
-    <>
-      <Header />
+    <Page>
       <TitleCard
         title="License"
         subtitle="Getting Your License"
-        img_name="group-solos"
+        img_name="cover-images/license-cover"
         maxH_vh={80}
       />
       <Flex
@@ -129,8 +127,7 @@ const License = () => {
         </SimpleGrid>
       </Flex>
       <Box p="20px" />
-      <Footer />
-    </>
+    </Page>
   );
 };
 export default License;

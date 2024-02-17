@@ -15,14 +15,14 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import Home from './Home';
+import Page from '../components/Page';
 
 export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);
 
   return (
-    <>
+    <Page>
       <Flex
         height="calc(60vh)"
         alignItems="center"
@@ -38,6 +38,6 @@ export default function ErrorPage() {
           <Button>Go Home</Button>
         </Link>
       </Flex>
-    </>
+    </Page>
   );
 }

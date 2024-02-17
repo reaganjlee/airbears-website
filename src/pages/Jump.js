@@ -29,11 +29,11 @@ import {
   TableCaption,
   TableContainer,
 } from '@chakra-ui/react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 import TitleCard from '../components/TitleCard';
 import TimelineRow from '../components/TimelineRow';
 import TableEntry from '../components/TableEntry';
+import Page from '../components/Page';
 
 import {
   FaCar,
@@ -86,12 +86,11 @@ const timelineData = [
 
 const Jump = () => {
   return (
-    <>
-      <Header />
+    <Page>
       <TitleCard
         title="Jump"
         subtitle="Have your first skydive"
-        img_name="tandemf"
+        img_name="cover-images/jump-cover"
       />
       <Flex alignItems="center" justify="center" direction="column">
         <VStack mt="calc(5vh)">
@@ -253,8 +252,7 @@ const Jump = () => {
         </SimpleGrid>
       </VStack>
       <Box p="20px" />
-      <Footer />
-    </>
+    </Page>
   );
 };
 export default Jump;

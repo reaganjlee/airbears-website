@@ -20,18 +20,41 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+const SectionContent = ({ title, subtitle, btn = 'Learn More' }) => {
+  let btnContent = '';
+  let btnLink = '';
+  if (btn === 'Learn More') {
+    btnContent = 'Learn More';
+    btnLink = 'home-license-btn';
+  } else {
+    btnContent = 'Yay!';
+    btnLink = 'home-license-btn';
+  }
+  return (
+    <VStack alignItems="center" justify="center" w="100%">
+      <Heading fontSize="3xl">{title}</Heading>
+      <Text fontSize="xl" maxW="70%">
+        {subtitle}
+      </Text>
+      <Link pt="10px" key={btnLink}>
+        <Button> {btnContent} </Button>
+      </Link>
+    </VStack>
+  );
+};
+
 const Home = () => {
   return (
     <>
       <Header />
       <Flex alignItems="center" height="calc(89vh)" pos="relative">
         <Image
-          src="/assets/background2.png"
+          src="/assets/cover-images/bg-gradient.png"
           alt="skydiving-photo"
           boxSize="full"
         />
         <VStack pos="absolute" pl="200px" textAlign="left" alignItems="left">
-          <Heading fontSize="5xl">Air Bears: Skydiving at Berkeley</Heading>
+          <Heading fontSize="6xl">Air Bears: Skydiving at Berkeley</Heading>
           <Text fontSize="xl">
             We are a student organization that fosters the welcoming community
             of skydivers at UC Berkeley.
@@ -47,6 +70,7 @@ const Home = () => {
               variant="solid"
               bg="black"
               color="white"
+              _hover={{ bg: 'gray.600' }}
               size="md"
               fontSize="md"
               p="20px"
@@ -84,19 +108,14 @@ const Home = () => {
             display="flex"
             justifyContent="center"
           >
-            <Flex
-              alignItems="center"
-              justify="center"
-              // height="calc(30vh)"
-              flexDirection="column"
-              fontSize="xl"
-            >
-              <Heading fontSize="3xl">Jump Days</Heading>
-              <Text>Take your first jump!</Text>
-              <Link key="home-jump-btn">
-                <Button> Learn More </Button>
-              </Link>
-            </Flex>
+            <SectionContent
+              title="Jump Days"
+              subtitle="
+              Have an opportunity to experience the 
+              rush of freefall followed by a parachute 
+              glide down with an expert diver
+              "
+            />
           </GridItem>
           <GridItem
             colSpan={1}
@@ -104,16 +123,11 @@ const Home = () => {
             display="flex"
             justifyContent="center"
           >
-            <VStack alignItems="center" justify="center" height="calc(30vh)">
-              <Heading fontSize="3xl">Getting your License</Heading>
-              <Text fontSize="xl" maxW="70%">
-                Learn to skydive on your own and potentially teach others how to
-                skydive as well!
-              </Text>
-              <Link key="home-license-btn">
-                <Button> Learn More </Button>
-              </Link>
-            </VStack>
+            <SectionContent
+              title="Getting your License"
+              subtitle="Learn to skydive on your own and potentially teach others how to
+                skydive as well!"
+            />
           </GridItem>
           <GridItem colSpan={1}>
             <Flex justifyContent="center">
