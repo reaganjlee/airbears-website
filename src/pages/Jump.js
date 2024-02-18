@@ -95,9 +95,10 @@ const Jump = () => {
       />
       <Flex alignItems="center" justify="center" direction="column">
         <VStack>
-          <Text fontSize="3xl" pb="4%">
+          {/* <Text fontSize="3xl" pb="4%">
             What does skydiving look like?
-          </Text>
+          </Text> */}
+          <SectionContent title="What does skydiving look like?" subtitle="" />
           <iframe
             width="740"
             height="472"

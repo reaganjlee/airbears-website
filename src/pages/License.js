@@ -82,12 +82,16 @@ const License = () => {
       </Flex>
       <SimpleGrid columns={2} minH="calc(50vh)" alignItems="center">
         <GridItem colSpan={1}>
-          <Text textAlign="center" fontSize="3xl">
+          <SectionContent
+            title="What can you do with a skydiving license?"
+            subtitle="Skydive by yourself!"
+          />
+          {/* <Text textAlign="center" fontSize="3xl">
             What can you do with a skydiving license?
           </Text>
           <Text textAlign="center" fontSize="xl">
             Skydive by yourself!
-          </Text>
+          </Text> */}
         </GridItem>
         <GridItem colSpan={1} textAlign="center">
           {/* <Box w="426px" h="240px" bg="red" /> */}
@@ -123,11 +127,12 @@ const License = () => {
               maxW="80%"
             />
           </GridItem>
-          <GridItem column={1}>
+          <GridItem column={1} textAlign="left">
             <VStack p="30px" m="30px" align="left" fontSize="xl" rounded="lg">
-              <Text align="left" fontSize="4xl">
+              <SectionContent title="How much does it cost?" subtitle="" />
+              {/* <Text align="left" fontSize="4xl">
                 How much does it cost?{' '}
-              </Text>
+              </Text> */}
               <Box w="full">
                 <Text>The full package includes:</Text>
               </Box>
@@ -140,10 +145,21 @@ const License = () => {
                 <ListItem>USPA A License Graduation Check Dive</ListItem>
                 <ListItem>All gear rentals & pack jobs</ListItem>
               </UnorderedList>
-              <Text>
+              <SectionContent
+                title=""
+                subtitle="AirBears offers a discount to members, contact us for more
+                information!"
+                textAlign="left"
+                subtitle_maxW="100%"
+              />
+              {/* <Text fontSize="xl" pb="10px">
                 AirBears offers a discount to members, contact us for more
                 information!
-              </Text>
+              </Text> */}
+              {/* <Text>
+                AirBears offers a discount to members, contact us for more
+                information!
+              </Text> */}
             </VStack>
           </GridItem>
         </SimpleGrid>
