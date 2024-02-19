@@ -17,7 +17,7 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SectionContent from '../components/SectionContent';
 import StatCardRow from '../components/StatCardRow';
@@ -41,7 +41,7 @@ const StatCardData = [
 const Home = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Flex alignItems="center" height="calc(89vh)" pos="relative">
         <Image
           src="/assets/cover-images/bg-gradient.png"
