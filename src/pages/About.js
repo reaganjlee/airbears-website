@@ -17,9 +17,9 @@ import {
   GridItem,
 } from '@chakra-ui/react';
 
-import TitleCard from '../components/TitleCard';
-import ProfileCard from '../components/ProfileCard';
-import Page from '../components/Page';
+import TitleCard from '../components/TitleCard.jsx';
+import ProfileCard from '../components/ProfileCard.jsx';
+import Page from '../components/Page.jsx';
 
 const About = () => {
   return (

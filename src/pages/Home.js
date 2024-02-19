@@ -17,11 +17,11 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import SectionContent from '../components/SectionContent';
-import StatCardRow from '../components/StatCardRow';
-import { BlackButton, ColoredButton } from '../components/Button';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import SectionContent from '../components/SectionContent.jsx';
+import StatCardRow from '../components/StatCardRow.jsx';
+import { BlackButton, ColoredButton } from '../components/Button.jsx';
 
 const StatCardData = [
   {
