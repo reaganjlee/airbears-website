@@ -3,10 +3,12 @@ import { extendTheme } from '@chakra-ui/react';
 import '@fontsource/rajdhani';
 import '@fontsource/heebo';
 import '@fontsource/josefin-sans';
+import '@fontsource/poppins';
 
 const theme = extendTheme({
   fonts: {
-    // heading: `montserrat-alternates', sans-serif`,
+    heading: `'Poppins', sans-serif`,
+    body: `'Open Sans', sans-serif`,
     // body: `montserrat-alternates', sans-serif`,
     // mono: `montserrat-alternates', sans-serif`,
     // heading: `montserrat-alternates', sans-serif`,

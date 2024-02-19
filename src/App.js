@@ -18,27 +18,45 @@ import Home from './pages/Home';
 import About from './pages/About';
 import License from './pages/License';
 import Jump from './pages/Jump';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  ScrollRestoration,
+} from 'react-router-dom';
+
 import ErrorPage from './pages/ErrorPage';
 import theme from './theme';
 
+const AppLayout = () => (
+  <>
+    <ScrollRestoration />
+    <Outlet />
+  </>
+);
+
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/about',
-    element: <About />,
-  },
-  {
-    path: '/license',
-    element: <License />,
-  },
-  {
-    path: '/jump',
-    element: <Jump />,
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+      {
+        path: '/license',
+        element: <License />,
+      },
+      {
+        path: '/jump',
+        element: <Jump />,
+      },
+    ],
   },
 ]);
 

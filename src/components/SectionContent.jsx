@@ -38,7 +38,11 @@ const IfContactUsText = ({ text }) => {
     const parts = text.split(/(contact us)/i);
     return parts.map((part, index) =>
       /contact us/i.test(part) ? (
-        <Link key={index} href="/contact" color="blue.500">
+        <Link
+          key={index}
+          href="https://linktr.ee/calairbears/"
+          color="gray.500"
+        >
           {part}
         </Link>
       ) : (
@@ -49,33 +53,4 @@ const IfContactUsText = ({ text }) => {
     return <>{text}</>;
   }
 };
-
-// const SectionContent = ({ title, subtitle }) => {
-//   const hasContactUs = subtitle.toLowerCase().includes('contact us');
-//   if (hasContactUs) {
-// const renderSubtitleWithLink = () => {
-//   const parts = subtitle.split(/(contact us)/i);
-//   return parts.map((part, index) =>
-//     /contact us/i.test(part) ? (
-//       <Link key={index} href="/contact" color="blue.500">
-//         {part}
-//       </Link>
-//     ) : (
-//           // if nothing, plain text
-//           <React.Fragment key={index}>{part}</React.Fragment>
-//         )
-//       );
-//     };
-//   } else {
-//     return (
-//       <VStack alignItems="center" justify="center" w="100%">
-//         <Heading fontSize="3xl">{title}</Heading>
-//         <Text fontSize="xl" maxW="70%" pb="10px">
-//           {subtitle}
-//         </Text>
-//       </VStack>
-//     );
-//   }
-// };
-
 export default SectionContent;

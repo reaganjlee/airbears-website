@@ -4,6 +4,7 @@ import {
   Button,
   HStack,
   chakra,
+  Heading,
   VStack,
   Box,
   Text,
@@ -12,7 +13,7 @@ import {
 export function TableEntry({ title, subtitle }) {
   return (
     <Flex direction="column" justifyContent="flex-start" h="100%">
-      <Text>{title}</Text>
+      <Heading fontSize="md">{title}</Heading>
       <Text
         fontSize="sm"
         color="gray.400"

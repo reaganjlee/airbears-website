@@ -30,7 +30,6 @@ const License = () => {
         title="License"
         subtitle="Getting Your License"
         img_name="cover-images/license-cover"
-        maxH_vh={80}
       />
       <Flex
         alignItems="left"

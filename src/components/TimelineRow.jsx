@@ -4,6 +4,7 @@ import {
   Icon,
   Text,
   Card,
+  Heading,
   CardHeader,
   CardBody,
   useColorModeValue,
@@ -40,9 +41,9 @@ function TimelineComponent(props) {
         />
       </Flex>
       <Flex direction="column" justifyContent="flex-start" h="100%">
-        <Text fontSize="md" color={textColor} fontWeight="bold">
+        <Heading fontSize="md" color={textColor} fontWeight="bold">
           {title}
-        </Text>
+        </Heading>
         <Text fontSize="md" color="gray.400" fontWeight="normal">
           {date}
         </Text>

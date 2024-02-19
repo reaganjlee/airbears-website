@@ -20,6 +20,23 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SectionContent from '../components/SectionContent';
+import StatCardRow from '../components/StatCardRow';
+import { BlackButton, ColoredButton } from '../components/Button';
+
+const StatCardData = [
+  {
+    title: '100+',
+    subtitle: 'Members',
+  },
+  {
+    title: '50+',
+    subtitle: 'Events',
+  },
+  {
+    title: '90+',
+    subtitle: 'Jumps',
+  },
+];
 
 const Home = () => {
   return (
@@ -44,23 +61,12 @@ const Home = () => {
            in a way that is as accessible as possible. (Est. 1969) */}
 
           <HStack pt="10px">
-            <Button
-              variant="solid"
-              bg="black"
-              color="white"
-              _hover={{ bg: 'gray.600' }}
-              size="md"
-              fontSize="md"
-              p="20px"
-            >
-              Join us
-            </Button>
-            <Button variant="outline" bg="white" colorScheme="teal">
-              Learn More
-            </Button>
+            <BlackButton text="Join Us" href="https://linktr.ee/calairbears/" />
+            <ColoredButton text="Learn More" to="/about" />
           </HStack>
         </VStack>
       </Flex>
+      <StatCardRow StatCardData={StatCardData} />
       <Flex padding={10}>
         <SimpleGrid
           columns={2}
@@ -95,9 +101,7 @@ const Home = () => {
               glide down with an expert diver
               "
               />
-              <Link key="home-license-btn">
-                <Button> Learn More </Button>
-              </Link>
+              <BlackButton text="Learn More" to="/jump" />
             </VStack>
           </GridItem>
           <GridItem
@@ -113,7 +117,7 @@ const Home = () => {
                 skydive as well!"
               />
               <Link key="home-license-btn">
-                <Button> Learn More </Button>
+                <BlackButton text="Learn More" to="/license" />
               </Link>
             </VStack>
           </GridItem>
