@@ -20,6 +20,7 @@ import {
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SectionContent from '../components/SectionContent';
+import FeatureSection from '../components/FeatureSection';
 import StatCardRow from '../components/StatCardRow';
 import { BlackButton, ColoredButton } from '../components/Button';
 
@@ -112,83 +113,30 @@ const Home = () => {
       </Box>
       <StatCardRow StatCardData={StatCardData} />
       <Flex padding={10} direction="column">
-        <Flex direction={{ base: 'column', md: 'row' }} w="100%">
-          <Flex
-            maxW={{ base: '100%', md: '50%' }}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Image
-              src="/assets/Frame 2.png"
-              alt="skydiving-photo"
-              boxSize="full"
-              borderRadius="20%"
-              // padding="100px"
-              maxW="80%"
-              // maxH="10%"
-            />
-          </Flex>
-          <Box
-            alignItems="center"
-            display="flex"
-            justifyContent="center"
-            maxW={{ base: '100%', md: '50%' }}
-            pt={{ base: '5%', md: '0%' }}
-          >
-            <VStack>
-              <SectionContent
-                title="Jump Days"
-                subtitle="
-              Have an opportunity to experience the 
-              rush of freefall followed by a parachute 
-              glide down with an expert diver
-              "
-              />
-              <BlackButton text="Learn More" to="/jump" />
-            </VStack>
-          </Box>
-        </Flex>
-        <Flex
-          direction={{ base: 'column-reverse', md: 'row' }}
-          w="100%"
-          pt={{ base: '5%', md: '0%' }}
-        >
-          <Flex
-            maxW={{ base: '100%', md: '50%' }}
-            justifyContent="center"
-            alignItems="center"
-            pt={{ base: '5%', md: '0%' }}
-          >
-            <VStack>
-              <SectionContent
-                title="Getting your License"
-                subtitle="Learn to skydive on your own and potentially teach others how to
-                skydive as well!"
-              />
-              <Link key="home-license-btn">
-                <BlackButton text="Learn More" to="/license" />
-              </Link>
-            </VStack>
-          </Flex>
-
-          <Box
-            alignItems="center"
-            display="flex"
-            justifyContent="center"
-            maxW={{ base: '100%', md: '50%' }}
-          >
-            <Flex justifyContent="center">
-              <Image
-                src="/assets/Frame-1.png"
-                alt="skydiving-photo"
-                boxSize="full"
-                // padding="100px"
-                maxW="80%"
-                borderRadius="20%"
-              />
-            </Flex>
-          </Box>
-        </Flex>
+        <FeatureSection
+          imgSrc="/assets/Frame 2.png"
+          altText="skydiving-photo"
+          title="Jump Days"
+          subtitle="
+        Have an opportunity to experience the 
+        rush of freefall followed by a parachute 
+        glide down with an expert diver
+        "
+          buttonText="Learn More"
+          buttonLink="/jump"
+        />
+        <Box pt={{ base: '5%', md: '0%' }}>
+          <FeatureSection
+            imgSrc="/assets/Frame-1.png"
+            altText="skydiving-photo"
+            title="Getting your License"
+            subtitle="Learn to skydive on your own and potentially teach others how to
+          skydive as well!"
+            buttonText="Learn More"
+            buttonLink="/license"
+            direction={{ base: 'column', md: 'row-reverse' }}
+          />
+        </Box>
       </Flex>
       <Footer />
     </>
