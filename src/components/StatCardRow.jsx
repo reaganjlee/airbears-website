@@ -14,11 +14,11 @@ import {
 
 const StatCard = ({ title, subtitle }) => {
   return (
-    <Card justify="center" alignItems="center" m="10px" w="full">
-      <Heading fontSize="4xl" pb="5px" pt="10px">
+    <Card justify="center" alignItems="center" m="5px" w="full">
+      <Heading fontSize={{ base: 'md', md: '4xl' }} pb="5px" pt="10px">
         {title}
       </Heading>
-      <CardBody fontSize="2xl" pt="0" pb="10px">
+      <CardBody fontSize={{ base: 'sm', md: 'xl' }} pt="0" pb="10px">
         {subtitle}
       </CardBody>
     </Card>

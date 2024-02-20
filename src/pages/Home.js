@@ -42,13 +42,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Box
-      // backgroundImage="/assets/cover-images/bg-gradient3.png"
-      // backgroundSize={{ base: 'auto', md: 'contain' }}
-      // // bgPosition="center"
-      // // bgSize="100% auto"
-      // bgRepeat="no-repeat"
-      >
+      <Box>
         <Flex alignItems="center" height="calc(89vh)" pos="relative">
           <Image
             src="/assets/cover-images/bg-gradient.png"
@@ -118,8 +112,12 @@ const Home = () => {
       </Box>
       <StatCardRow StatCardData={StatCardData} />
       <Flex padding={10} direction="column">
-        <Flex direction="row" w="100%">
-          <Flex maxW="50%" justifyContent="center" alignItems="center">
+        <Flex direction={{ base: 'column', md: 'row' }} w="100%">
+          <Flex
+            maxW={{ base: '100%', md: '50%' }}
+            justifyContent="center"
+            alignItems="center"
+          >
             <Image
               src="/assets/Frame 2.png"
               alt="skydiving-photo"
@@ -134,7 +132,8 @@ const Home = () => {
             alignItems="center"
             display="flex"
             justifyContent="center"
-            maxW="50%"
+            maxW={{ base: '100%', md: '50%' }}
+            pt={{ base: '5%', md: '0%' }}
           >
             <VStack>
               <SectionContent
@@ -149,8 +148,17 @@ const Home = () => {
             </VStack>
           </Box>
         </Flex>
-        <Flex direction="row" w="100%">
-          <Flex maxW="50%" justifyContent="center" alignItems="center">
+        <Flex
+          direction={{ base: 'column-reverse', md: 'row' }}
+          w="100%"
+          pt={{ base: '5%', md: '0%' }}
+        >
+          <Flex
+            maxW={{ base: '100%', md: '50%' }}
+            justifyContent="center"
+            alignItems="center"
+            pt={{ base: '5%', md: '0%' }}
+          >
             <VStack>
               <SectionContent
                 title="Getting your License"
@@ -162,11 +170,12 @@ const Home = () => {
               </Link>
             </VStack>
           </Flex>
+
           <Box
             alignItems="center"
             display="flex"
             justifyContent="center"
-            maxW="50%"
+            maxW={{ base: '100%', md: '50%' }}
           >
             <Flex justifyContent="center">
               <Image

@@ -24,8 +24,8 @@ const Footer = () => {
       <VStack
         alignItems="center"
         justify="center"
-        height="calc(10vh)"
-        marginTop={100}
+        // height="calc(10vh)"
+        // marginTop={100}
         paddingBottom={150}
       >
         <HStack>
@@ -67,7 +67,7 @@ const Footer = () => {
               />
             </Link>
           </ListItem>
-          <ListItem px="1em">
+          <ListItem px="1em" textAlign="center">
             {' '}
             We are a student group acting independently of the University of
             California. We take full responsibility for our organization and
