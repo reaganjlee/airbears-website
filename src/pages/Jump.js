@@ -111,7 +111,7 @@ const Jump = () => {
         </VStack>
       </Flex>
       {/* bg="gray.50" */}
-      <VStack pt="30px">
+      <VStack pt={8}>
         <SimpleGrid
           columns={2}
           columnGap={3}
@@ -126,11 +126,6 @@ const Jump = () => {
             alignItems="center"
             justify="center"
           >
-            {/* <VStack rounded="lg" padding="10px">
-
-              <Text fontSize="3xl"> Schedule </Text>
-              <Text> What does a jump day look like? </Text>
-            </VStack> */}
             <Box alignItems="center" justifyContent="center" align="center">
               <SectionContent
                 title="Schedule"
@@ -144,21 +139,6 @@ const Jump = () => {
             </Flex>
           </GridItem>
           <GridItem colSpan={1}>
-            {/* <VStack rounded="lg" padding="10px">
-              <Text
-                fontSize="3xl"
-                textAlign="center"
-                alignItems="center"
-                justify="center"
-              >
-                {' '}
-                Pricing{' '}
-              </Text>
-              <Text align="center">
-                {' '}
-                If you have any questions, please contact us{' '}
-              </Text>
-            </VStack> */}
             <SectionContent
               title="Pricing"
               subtitle="If you have any questions, please contact us"
@@ -169,9 +149,8 @@ const Jump = () => {
             fontSize="calc(1.5vw)"
             textAlign="center"
             spacing={0}
-            // columnGap="10px"
-            gap="10px"
-            pl="30px"
+            gap={2.5}
+            pl={8}
           >
             <Box position="relative">
               <Card>
@@ -181,10 +160,10 @@ const Jump = () => {
                       <Thead>
                         <Tr>
                           <Th></Th>
-                          <Th textAlign="center" p="10px">
+                          <Th textAlign="center" p={2.5}>
                             With AirBears
                           </Th>
-                          <Th textAlign="center" p="10px">
+                          <Th textAlign="center" p={2.5}>
                             Regular
                           </Th>
                         </Tr>
@@ -192,19 +171,12 @@ const Jump = () => {
                       <Tbody>
                         <Tr>
                           <Td w={first_coln_width}>
-                            <TableEntry
-                              title="Tandem*"
-                              // subtitle="See below for more details"
-                              subtitle="See below"
-                            />
+                            <TableEntry title="Tandem*" subtitle="See below" />
                           </Td>
                           <Td isNumeric>
                             <Text textAlign="center">$220</Text>
                           </Td>
                           <Td isNumeric>
-                            {/* <Text textAlign="center" as="s">
-                              $255
-                            </Text> */}
                             <StrikedItem content="$255" />
                           </Td>
                         </Tr>
@@ -219,9 +191,6 @@ const Jump = () => {
                             <Text textAlign="center">$115</Text>
                           </Td>
                           <Td isNumeric>
-                            {/* <Box textAlign="center">
-                              <Text as="s">$130</Text>
-                            </Box> */}
                             <StrikedItem content="$130" />
                           </Td>
                         </Tr>
@@ -236,9 +205,6 @@ const Jump = () => {
                             <Text textAlign="center">$0</Text>
                           </Td>
                           <Td isNumeric>
-                            {/* <Text as="s" textAlign="center">
-                              $30
-                            </Text> */}
                             <StrikedItem content="$30" />
                           </Td>
                         </Tr>
@@ -268,7 +234,7 @@ const Jump = () => {
           </GridItem>
         </SimpleGrid>
       </VStack>
-      <Box p="20px" />
+      <Box p={5} />
     </Page>
   );
 };

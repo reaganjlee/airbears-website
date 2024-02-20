@@ -21,13 +21,7 @@ const ICON_SIZE = 12;
 const Footer = () => {
   return (
     <chakra.footer id="footer">
-      <VStack
-        alignItems="center"
-        justify="center"
-        // height="calc(10vh)"
-        // marginTop={100}
-        paddingBottom={150}
-      >
+      <VStack alignItems="center" justify="center" paddingBottom={150}>
         <HStack>
           <Link
             href="https://www.instagram.com/calairbears"
@@ -67,13 +61,13 @@ const Footer = () => {
               />
             </Link>
           </ListItem>
-          <ListItem px="1em" textAlign="center">
+          <ListItem textAlign="center">
             {' '}
             We are a student group acting independently of the University of
             California. We take full responsibility for our organization and
             this web site.
           </ListItem>
-          <ListItem px="1em">
+          <ListItem>
             {' '}
             Made with ❤️ by{' '}
             <Link href="https://www.linkedin.com/in/reaganjlee/">

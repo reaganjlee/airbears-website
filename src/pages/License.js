@@ -31,32 +31,7 @@ const License = () => {
         subtitle="Getting Your License"
         img_name="cover-images/license-cover"
       />
-      <Flex
-        alignItems="left"
-        justify="left"
-        // height="calc(30vh)"
-
-        w="full"
-      >
-        {/* <VStack p="30px" m="30px" align="left" fontSize="xl" rounded="lg">
-          <Text align="left" fontSize="4xl">
-            Getting Your License{' '}
-          </Text>
-          <Box w="full">
-            <Text>
-              Getting your solo diving license is a great way to level up your
-              diving. To do so you need to:
-            </Text>
-          </Box>
-          <OrderedList pl="10px">
-            <ListItem fontSize="3xl">Learn</ListItem>
-            <Text>Take a jump course</Text>
-            <ListItem fontSize="3xl">Solo Certification</ListItem>
-            <Text>8 jumps with a coach, now you can jump alone</Text>
-            <ListItem fontSize="3xl">A-License</ListItem>
-            <Text>After 25 jumps yourself, you're fully certified!</Text>
-          </OrderedList>
-        </VStack> */}
+      <Flex alignItems="left" justify="left" w="full">
         <VStack w="full">
           <SectionContent
             title="Getting your License"
@@ -69,14 +44,6 @@ const License = () => {
           <Text>8 jumps with a coach, now you can jump alone</Text>
           <Text fontSize="3xl">A-License</Text>
           <Text>After 25 jumps yourself, you're fully certified!</Text>
-          {/* <List pl="10px">
-          <ListItem fontSize="3xl">Learn</ListItem>
-          <Text>Take a jump course</Text>
-          <ListItem fontSize="3xl">Solo Certification</ListItem>
-          <Text>8 jumps with a coach, now you can jump alone</Text>
-          <ListItem fontSize="3xl">A-License</ListItem>
-          <Text>After 25 jumps yourself, you're fully certified!</Text>
-          </List> */}
         </VStack>
       </Flex>
       <SimpleGrid columns={2} minH="calc(50vh)" alignItems="center">
@@ -85,15 +52,8 @@ const License = () => {
             title="What can you do with a skydiving license?"
             subtitle="Skydive by yourself!"
           />
-          {/* <Text textAlign="center" fontSize="3xl">
-            What can you do with a skydiving license?
-          </Text>
-          <Text textAlign="center" fontSize="xl">
-            Skydive by yourself!
-          </Text> */}
         </GridItem>
         <GridItem colSpan={1} textAlign="center">
-          {/* <Box w="426px" h="240px" bg="red" /> */}
           <Box
             as="video"
             controls
@@ -103,7 +63,7 @@ const License = () => {
             sx={{
               aspectRatio: '16/9',
             }}
-            p="10px"
+            p={2.5}
           />
         </GridItem>
       </SimpleGrid>
@@ -122,12 +82,11 @@ const License = () => {
               alt="member-thumbs-up"
               boxSize="full"
               borderRadius="20%"
-              // padding="100px"
               maxW="80%"
             />
           </GridItem>
           <GridItem column={1} textAlign="left">
-            <VStack p="30px" m="30px" align="left" fontSize="xl" rounded="lg">
+            <VStack p={8} m={8} align="left" fontSize="xl" rounded="lg">
               <SectionContent title="How much does it cost?" subtitle="" />
               {/* <Text align="left" fontSize="4xl">
                 How much does it cost?{' '}
@@ -135,7 +94,7 @@ const License = () => {
               <Box w="full">
                 <Text>The full package includes:</Text>
               </Box>
-              <UnorderedList pl="10px">
+              <UnorderedList pl={2.5}>
                 <ListItem>First Jump Course</ListItem>
                 <ListItem>7 AFF Jumps</ListItem>
                 <ListItem>5 Coach Jumps</ListItem>
@@ -151,19 +110,11 @@ const License = () => {
                 textAlign="left"
                 subtitle_maxW="100%"
               />
-              {/* <Text fontSize="xl" pb="10px">
-                AirBears offers a discount to members, contact us for more
-                information!
-              </Text> */}
-              {/* <Text>
-                AirBears offers a discount to members, contact us for more
-                information!
-              </Text> */}
             </VStack>
           </GridItem>
         </SimpleGrid>
       </Flex>
-      <Box p="20px" />
+      <Box p={5} />
     </Page>
   );
 };

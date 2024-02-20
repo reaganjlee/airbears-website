@@ -23,15 +23,8 @@ import React from 'react';
 
 const NavBarItems = isMobile => {
   return (
-    // (isMobile &&
     <>
-      <Flex
-        as="nav"
-        spacing="5"
-        direction={{ base: 'column', md: 'row' }}
-        // fontSize={{ base: '40px', md: 'md' }}
-      >
-        {/* <Box> */}
+      <Flex as="nav" spacing="5" direction={{ base: 'column', md: 'row' }}>
         <Link to="/">
           <Button variant="nav"> Home </Button>
         </Link>
@@ -44,7 +37,6 @@ const NavBarItems = isMobile => {
         <Link to="/jump">
           <Button variant="nav"> Jump </Button>
         </Link>
-        {/* </Box> */}
       </Flex>
 
       <Box pl={{ base: '1', md: '0' }} pt={{ base: '5', md: '0' }}>
@@ -66,15 +58,6 @@ const NavBar = () => {
   return (
     <chakra.header id="header">
       <Box>
-        {/* <Flex
-          bg="blue.500"
-          color="white"
-          minH={'60px'}
-          py={{ base: 2 }}
-          px={{ base: 4 }}
-          align={'center'}
-          justify={'space-between'}
-        > */}
         <Flex
           w="100%"
           align="center"
@@ -121,49 +104,6 @@ const NavBar = () => {
           </Stack>
         </Collapse>
       </Box>
-      {/* <Flex w="100%" align="center" px="6" py="4" justify="space-between">
-        <Link to="/">
-          <Button variant="nav"> AirBears </Button>
-        </Link>
-        <HStack as="nav" spacing="5">
-          <Link to="/">
-            <Button variant="nav"> Home </Button>
-          </Link>
-          <Link to="/about">
-            <Button variant="nav"> About </Button>
-          </Link>
-          <Link to="/license">
-            <Button variant="nav"> License </Button>
-          </Link>
-          <Link to="/jump">
-            <Button variant="nav"> Jump </Button>
-          </Link>
-        </HStack>
-
-        <HStack>
-          <Link to="https://linktr.ee/calairbears/">
-            <Button> Join </Button>
-          </Link>
-          {!isMobile && <IconButton icon={<CloseIcon />} />}
-          {/* // colorScheme="teal"
-            // aria-label="Call Segun"
-            // size="lg"
-            // icon={<PhoneIcon />}
-            // onClick={onToggle}
-            // icon={ 
-            //   isOpen ? (
-            // icon={<CloseIcon />}
-            //   ) : (
-            //     <HamburgerIcon w={5} h={5} />
-            //   )
-            // }
-            variant={'ghost'}
-            // aria-label={'Toggle Navigation'}
-          />
-          {/* )} 
-        </HStack>
-        
-      </Flex> */}
     </chakra.header>
   );
 };

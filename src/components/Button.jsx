@@ -35,7 +35,7 @@ export const BlackButton = ({ text, to, href }) => {
       _hover={{ bg: 'gray.600' }}
       size="md"
       fontSize="md"
-      p="20px"
+      p={5}
       onClick={() => handleClick()}
     >
       {text}

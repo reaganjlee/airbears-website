@@ -38,9 +38,9 @@ const About = () => {
           that is as accessible as possible. (Est. 1969)
         </Text>
       </Flex>
-      <Flex alignItems="center" justify="center" mt="calc(5vh)">
+      <Flex alignItems="center" justify="center" mt={8}>
         {/* <VStack> */}
-        <Text fontSize="3xl" pb="calc(5vh)">
+        <Text fontSize="3xl" pb={8}>
           Officers
         </Text>
       </Flex>

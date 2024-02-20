@@ -44,7 +44,7 @@ const Home = () => {
     <>
       <NavBar />
       <Box>
-        <Flex alignItems="center" height="calc(89vh)" pos="relative">
+        <Flex alignItems="center" height="36rem" pos="relative">
           <Image
             src="/assets/cover-images/bg-gradient.png"
             alt="skydiving-photo"
@@ -64,7 +64,7 @@ const Home = () => {
           <VStack
             pos="absolute"
             // pt="10"
-            pl={{ base: '30px', md: '200px' }}
+            pl={{ base: 8, md: 48 }}
             textAlign="left"
             alignItems="left"
           >
@@ -101,7 +101,7 @@ const Home = () => {
            members to the incredible and fear-conquering experience of skydiving 
            in a way that is as accessible as possible. (Est. 1969) */}
 
-            <HStack pt="10px">
+            <HStack pt={2.5}>
               <BlackButton
                 text="Join Us"
                 href="https://linktr.ee/calairbears/"

@@ -26,7 +26,7 @@ const SectionContent = ({
       textAlign={textAlign}
     >
       <Heading fontSize={{ base: '2xl', md: '3xl' }}>{title}</Heading>
-      <Text fontSize={{ base: 'md', md: 'md' }} maxW={subtitle_maxW} pb="10px">
+      <Text fontSize={{ base: 'md', md: 'md' }} maxW={subtitle_maxW} pb={2.5}>
         <IfContactUsText text={subtitle} />
       </Text>
     </VStack>
