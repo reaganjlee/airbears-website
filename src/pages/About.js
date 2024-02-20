@@ -30,7 +30,7 @@ const About = () => {
         img_name="cover-images/mountain-bg"
       />
       <Flex alignItems="center" justify="center">
-        <Text maxW="80%" fontSize="xl" pb="5vh">
+        <Text maxW="80%" fontSize={{ base: 'sm', md: 'xl' }}>
           AirBears at Berkeley is a student-run organization based at the
           University of California, Berkeley dedicated to fostering a community
           of diverse and welcoming individuals by exposing community members to
@@ -39,77 +39,61 @@ const About = () => {
         </Text>
       </Flex>
       <Flex alignItems="center" justify="center" mt="calc(5vh)">
-        <VStack>
-          <Text fontSize="3xl" pb="calc(5vh)">
-            Officers
-          </Text>
+        {/* <VStack> */}
+        <Text fontSize="3xl" pb="calc(5vh)">
+          Officers
+        </Text>
+      </Flex>
+      <Flex
+        alignItems="start"
+        justify="center"
+        direction="row"
+        wrap="wrap"
+        w="100%"
+      >
+        <ProfileCard
+          title="Trevor Shin"
+          subtitle="President"
+          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          img_name="Trevor Shin - President.png"
+        />
+        <ProfileCard
+          title="Andrew Kim"
+          subtitle="Vice President"
+          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          img_name="Andrew Kim - Vice President.png"
+        />
 
-          <SimpleGrid
-            columns={2}
-            // columnGap={3}
-            rowGap={0}
-            w="full"
-            spacingX="180px"
-            spacingY="120px"
-          >
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Trevor Shin"
-                subtitle="President"
-                bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
-                img_name="Trevor Shin - President.png"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Andrew Kim"
-                subtitle="Vice President"
-                bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
-                img_name="Andrew Kim - Vice President.png"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Savanna Aguayo"
-                subtitle="External Head of Operations"
-                bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
-                img_name="Savanna Aguayo - External Head of Operations.png"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Keyla Barcenas"
-                subtitle="Internal Head of Operations"
-                bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
-                img_name="Keyla Barcenas - Internal Head of Operations.png"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Isaac Schultz"
-                subtitle="Treasurer"
-                bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
-                img_name="Isaac Schultz - Treasurer.png"
-              />
-            </GridItem>
-            <GridItem colSpan={1}>
-              <ProfileCard
-                title="Ahmed AlBadrani"
-                subtitle="Jump Day Coordinator"
-                bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
-                img_name="Ahmed AlBadrani - Jump Day Coordinator.png"
-              />
-            </GridItem>
-            <GridItem colSpan={2}>
-              <ProfileCard
-                title="Zane Levine"
-                subtitle="Licensing Coordinator"
-                bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
-                img_name="Zane Levine - Licensing Coordinator .png"
-              />
-            </GridItem>
-          </SimpleGrid>
-        </VStack>
+        <ProfileCard
+          title="Savanna Aguayo"
+          subtitle="External Head of Operations"
+          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          img_name="Savanna Aguayo - External Head of Operations.png"
+        />
+        <ProfileCard
+          title="Keyla Barcenas"
+          subtitle="Internal Head of Operations"
+          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          img_name="Keyla Barcenas - Internal Head of Operations.png"
+        />
+        <ProfileCard
+          title="Isaac Schultz"
+          subtitle="Treasurer"
+          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          img_name="Isaac Schultz - Treasurer.png"
+        />
+        <ProfileCard
+          title="Ahmed AlBadrani"
+          subtitle="Jump Day Coordinator"
+          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          img_name="Ahmed AlBadrani - Jump Day Coordinator.png"
+        />
+        <ProfileCard
+          title="Zane Levine"
+          subtitle="Licensing Coordinator"
+          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          img_name="Zane Levine - Licensing Coordinator .png"
+        />
       </Flex>
     </Page>
   );

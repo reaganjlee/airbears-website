@@ -28,7 +28,7 @@ const NavBarItems = isMobile => {
       <Flex
         as="nav"
         spacing="5"
-        direction={{ base: 'column-reverse', md: 'row' }}
+        direction={{ base: 'column', md: 'row' }}
         // fontSize={{ base: '40px', md: 'md' }}
       >
         {/* <Box> */}
