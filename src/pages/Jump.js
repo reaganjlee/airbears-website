@@ -119,9 +119,6 @@ const Jump = () => {
           w="full"
           textAlign="left"
           alignItems="center"
-          // h="calc(80vh)"
-
-          // mt="calc(20vh)"
         >
           <GridItem
             colSpan={1}

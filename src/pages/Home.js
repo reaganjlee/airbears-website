@@ -17,7 +17,7 @@ import {
   SimpleGrid,
   GridItem,
 } from '@chakra-ui/react';
-import Header from '../components/Header';
+import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SectionContent from '../components/SectionContent';
 import StatCardRow from '../components/StatCardRow';
@@ -41,42 +41,85 @@ const StatCardData = [
 const Home = () => {
   return (
     <>
-      <Header />
-      <Flex alignItems="center" height="calc(89vh)" pos="relative">
-        <Image
-          src="/assets/cover-images/bg-gradient.png"
-          alt="skydiving-photo"
-          boxSize="full"
-        />
-        <VStack pos="absolute" pl="200px" textAlign="left" alignItems="left">
-          <Heading fontSize="6xl">Air Bears: Skydiving at Berkeley</Heading>
-          <Text fontSize="xl">
-            We are a student organization that fosters the welcoming community
-            of skydivers at UC Berkeley.
-          </Text>
-          {/* AirBears at Berkeley is a student-run organization based 
+      <NavBar />
+      <Box
+      // backgroundImage="/assets/cover-images/bg-gradient3.png"
+      // backgroundSize={{ base: 'auto', md: 'contain' }}
+      // // bgPosition="center"
+      // // bgSize="100% auto"
+      // bgRepeat="no-repeat"
+      >
+        <Flex alignItems="center" height="calc(89vh)" pos="relative">
+          <Image
+            src="/assets/cover-images/bg-gradient.png"
+            alt="skydiving-photo"
+            boxSize="full"
+            // bgSize="cover"
+            display={{ base: 'none', md: 'block' }}
+          />
+          <Image
+            src="/assets/cover-images/iPad-bg.png"
+            // alt="skydiving-photo"
+            boxSize="full"
+            bgSize="cover"
+            alt="Mobile version"
+            display={{ base: 'block', md: 'none' }}
+          />
+
+          <VStack
+            pos="absolute"
+            // pt="10"
+            pl={{ base: '30px', md: '200px' }}
+            textAlign="left"
+            alignItems="left"
+          >
+            <Box>
+              <Heading
+                fontSize={{ base: '3xl', md: '6xl' }}
+                display={{ base: 'none', md: 'block' }}
+              >
+                Air Bears: Skydiving at Berkeley
+              </Heading>
+              <VStack
+                fontSize={{ base: '3xl', md: '6xl' }}
+                display={{ base: 'block', md: 'none' }}
+              >
+                <Heading>Air Bears:</Heading>
+                <Heading>Skydiving at Berkeley</Heading>
+              </VStack>
+              {/*               
+              <Heading
+                fontSize={{ base: '3xl', md: '6xl' }}
+                display={{ base: 'block', md: 'none' }}
+              >
+                Air Bears: Skydiving at Berkeley
+              </Heading> */}
+            </Box>
+
+            <Text fontSize={{ base: 'md', md: 'xl' }}>
+              We are a student organization that fosters the welcoming community
+              of skydivers at UC Berkeley.
+            </Text>
+            {/* AirBears at Berkeley is a student-run organization based 
           at the University of California, Berkeley dedicated to fostering a
            community of diverse and welcoming individuals by exposing community 
            members to the incredible and fear-conquering experience of skydiving 
            in a way that is as accessible as possible. (Est. 1969) */}
 
-          <HStack pt="10px">
-            <BlackButton text="Join Us" href="https://linktr.ee/calairbears/" />
-            <ColoredButton text="Learn More" to="/about" />
-          </HStack>
-        </VStack>
-      </Flex>
+            <HStack pt="10px">
+              <BlackButton
+                text="Join Us"
+                href="https://linktr.ee/calairbears/"
+              />
+              <ColoredButton text="Learn More" to="/about" />
+            </HStack>
+          </VStack>
+        </Flex>
+      </Box>
       <StatCardRow StatCardData={StatCardData} />
-      <Flex padding={10}>
-        <SimpleGrid
-          columns={2}
-          columnGap={3}
-          rowGap={6}
-          w="full"
-          align="center"
-          maxW="1500px"
-        >
-          <GridItem colSpan={1}>
+      <Flex padding={10} direction="column">
+        <Flex direction="row" w="100%">
+          <Flex maxW="50%" justifyContent="center" alignItems="center">
             <Image
               src="/assets/Frame 2.png"
               alt="skydiving-photo"
@@ -84,13 +127,14 @@ const Home = () => {
               borderRadius="20%"
               // padding="100px"
               maxW="80%"
+              // maxH="10%"
             />
-          </GridItem>
-          <GridItem
-            colSpan={1}
+          </Flex>
+          <Box
             alignItems="center"
             display="flex"
             justifyContent="center"
+            maxW="50%"
           >
             <VStack>
               <SectionContent
@@ -103,13 +147,10 @@ const Home = () => {
               />
               <BlackButton text="Learn More" to="/jump" />
             </VStack>
-          </GridItem>
-          <GridItem
-            colSpan={1}
-            alignItems="center"
-            display="flex"
-            justifyContent="center"
-          >
+          </Box>
+        </Flex>
+        <Flex direction="row" w="100%">
+          <Flex maxW="50%" justifyContent="center" alignItems="center">
             <VStack>
               <SectionContent
                 title="Getting your License"
@@ -120,8 +161,13 @@ const Home = () => {
                 <BlackButton text="Learn More" to="/license" />
               </Link>
             </VStack>
-          </GridItem>
-          <GridItem colSpan={1}>
+          </Flex>
+          <Box
+            alignItems="center"
+            display="flex"
+            justifyContent="center"
+            maxW="50%"
+          >
             <Flex justifyContent="center">
               <Image
                 src="/assets/Frame-1.png"
@@ -132,8 +178,8 @@ const Home = () => {
                 borderRadius="20%"
               />
             </Flex>
-          </GridItem>
-        </SimpleGrid>
+          </Box>
+        </Flex>
       </Flex>
       <Footer />
     </>
