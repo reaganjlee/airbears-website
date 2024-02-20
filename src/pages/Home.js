@@ -20,7 +20,7 @@ import {
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SectionContent from '../components/SectionContent';
-import FeatureSection from '../components/FeatureSection';
+import { FeatureSection } from '../components/FeatureSection';
 import StatCardRow from '../components/StatCardRow';
 import { BlackButton, ColoredButton } from '../components/Button';
 
