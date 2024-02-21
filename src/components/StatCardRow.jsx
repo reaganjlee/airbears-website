@@ -30,7 +30,7 @@ const StatCard = ({ title, subtitle }) => {
 function StatCardRow({ StatCardData }) {
   const direction = useBreakpointValue({ base: 'column', md: 'row' });
   return (
-    <Flex justify="center" mt="2%">
+    <Flex justify="center" pt={4} pb={{ base: 10, md: 4 }}>
       <Flex w="64%" direction={direction}>
         {StatCardData.map((card, index, arr) => {
           return <StatCard title={card.title} subtitle={card.subtitle} />;
