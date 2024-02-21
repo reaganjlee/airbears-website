@@ -38,8 +38,8 @@ import SectionContent from '../components/SectionContent';
 import PricingTable from '../components/PricingTable';
 import timelineData from '../data/timelineData';
 import {
+  ImageFeatureSection,
   FeatureSection,
-  TableFeatureSection,
 } from '../components/FeatureSection';
 
 const Jump = () => {
@@ -65,22 +65,19 @@ const Jump = () => {
         </VStack>
       </Flex>
       <VStack pt={8}>
-        <Flex w="full">
-          <TableFeatureSection
-            tableComponent={<TimelineRow timelineData={timelineData} />}
-            title="Schedule"
-            subtitle="What does a jump day look like?"
-            direction={{ base: 'column', md: 'row-reverse' }}
-          />
-        </Flex>
-        <Flex w="full">
-          <TableFeatureSection
-            tableComponent={<PricingTable />}
-            title="Pricing"
-            subtitle="If you have any questions, please contact us"
-            direction={{ base: 'column', md: 'row-reverse' }}
-          />
-        </Flex>
+        <FeatureSection
+          tableComponent={<TimelineRow timelineData={timelineData} />}
+          title="Schedule"
+          subtitle="What does a jump day look like?"
+          direction={{ base: 'column', md: 'row-reverse' }}
+        />
+
+        <FeatureSection
+          tableComponent={<PricingTable />}
+          title="Pricing"
+          subtitle="If you have any questions, please contact us"
+          direction={{ base: 'column', md: 'row-reverse' }}
+        />
       </VStack>
       <Box p={5} />
     </Page>

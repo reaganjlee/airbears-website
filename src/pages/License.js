@@ -10,6 +10,7 @@ import {
   Image,
   theme,
   Container,
+  Heading,
   ListItem,
   OrderedList,
   Flex,
@@ -22,6 +23,11 @@ import {
 import TitleCard from '../components/TitleCard';
 import Page from '../components/Page';
 import SectionContent from '../components/SectionContent';
+import {
+  ImageFeatureSection,
+  FeatureSection,
+} from '../components/FeatureSection';
+import FullPackageInfo from '../components/FullPackageInfo';
 
 const License = () => {
   return (
@@ -46,75 +52,31 @@ const License = () => {
           <Text>After 25 jumps yourself, you're fully certified!</Text>
         </VStack>
       </Flex>
-      <SimpleGrid columns={2} minH="calc(50vh)" alignItems="center">
-        <GridItem colSpan={1}>
-          <SectionContent
-            title="What can you do with a skydiving license?"
-            subtitle="Skydive by yourself!"
-          />
-        </GridItem>
-        <GridItem colSpan={1} textAlign="center">
-          <Box
-            as="video"
-            controls
-            src="/assets/license-skydive.mov"
-            alt="licensed skydive video"
-            objectFit="contain"
-            sx={{
-              aspectRatio: '16/9',
-            }}
-            p={2.5}
-          />
-        </GridItem>
-      </SimpleGrid>
-      <Flex
-        alignItems="left"
-        justify="left"
-        // height="calc(30vh)"
-        // bg="gray.50"
-        w="full"
-        // boxShadow="md"
-      >
-        <SimpleGrid columns={2} minH="calc(50vh)" alignItems="center">
-          <GridItem align="center">
-            <Image
-              src="/assets/member-thumbs-up.jpg"
-              alt="member-thumbs-up"
-              boxSize="full"
-              borderRadius="20%"
-              maxW="80%"
+      <Flex padding={10} direction="column">
+        <FeatureSection
+          tableComponent={
+            <Box
+              as="video"
+              controls
+              src="/assets/license-skydive.mov"
+              alt="licensed skydive video"
+              objectFit="contain"
+              sx={{
+                aspectRatio: '16/9',
+              }}
+              p={2.5}
             />
-          </GridItem>
-          <GridItem column={1} textAlign="left">
-            <VStack p={8} m={8} align="left" fontSize="xl" rounded="lg">
-              <SectionContent title="How much does it cost?" subtitle="" />
-              {/* <Text align="left" fontSize="4xl">
-                How much does it cost?{' '}
-              </Text> */}
-              <Box w="full">
-                <Text>The full package includes:</Text>
-              </Box>
-              <UnorderedList pl={2.5}>
-                <ListItem>First Jump Course</ListItem>
-                <ListItem>7 AFF Jumps</ListItem>
-                <ListItem>5 Coach Jumps</ListItem>
-                <ListItem>12 Solo Jumps</ListItem>
-                <ListItem>Packing Class w/ Test</ListItem>
-                <ListItem>USPA A License Graduation Check Dive</ListItem>
-                <ListItem>All gear rentals & pack jobs</ListItem>
-              </UnorderedList>
-              <SectionContent
-                title=""
-                subtitle="AirBears offers a discount to members, contact us for more
-                information!"
-                textAlign="left"
-                subtitle_maxW="100%"
-              />
-            </VStack>
-          </GridItem>
-        </SimpleGrid>
+          }
+          title="What can you do with a skydiving license?"
+          subtitle="Skydive by yourself!"
+          direction={{ base: 'column', md: 'row-reverse' }}
+        />
+        <ImageFeatureSection
+          imgSrc="/assets/member-thumbs-up.jpg"
+          altText="member-thumbs-up"
+          title={<FullPackageInfo />}
+        />
       </Flex>
-      <Box p={5} />
     </Page>
   );
 };

@@ -12,7 +12,7 @@ import { Link as RouterLink } from 'react-router-dom'; // Assuming you're using 
 import SectionContent from '../components/SectionContent';
 import { BlackButton, ColoredButton } from '../components/Button';
 
-export const FeatureSection = ({
+export const ImageFeatureSection = ({
   imgSrc,
   altText,
   title,
@@ -25,6 +25,7 @@ export const FeatureSection = ({
     <Flex direction={direction} w="100%">
       <Flex
         maxW={{ base: '100%', md: '50%' }}
+        maxH="30rem"
         justifyContent="center"
         alignItems="center"
       >
@@ -45,14 +46,16 @@ export const FeatureSection = ({
       >
         <VStack>
           <SectionContent title={title} subtitle={subtitle} />
-          <BlackButton text={buttonText} to={buttonLink} />
+          {buttonText && buttonLink && (
+            <BlackButton text={buttonText} to={buttonLink} />
+          )}
         </VStack>
       </Box>
     </Flex>
   );
 };
 
-export const TableFeatureSection = ({
+export const FeatureSection = ({
   tableComponent,
   title,
   subtitle,
@@ -61,7 +64,7 @@ export const TableFeatureSection = ({
   direction = { base: 'column', md: 'row' },
 }) => {
   return (
-    <Flex direction={direction} w="100%">
+    <Flex direction={direction} w="full">
       <Flex
         w={{ base: '100%', md: '50%' }}
         justifyContent="center"

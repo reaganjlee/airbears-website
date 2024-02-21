@@ -20,7 +20,7 @@ import {
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SectionContent from '../components/SectionContent';
-import { FeatureSection } from '../components/FeatureSection';
+import { ImageFeatureSection } from '../components/FeatureSection';
 import StatCardRow from '../components/StatCardRow';
 import { BlackButton, ColoredButton } from '../components/Button';
 
@@ -113,7 +113,7 @@ const Home = () => {
       </Box>
       <StatCardRow StatCardData={StatCardData} />
       <Flex padding={10} direction="column">
-        <FeatureSection
+        <ImageFeatureSection
           imgSrc="/assets/Frame 2.png"
           altText="skydiving-photo"
           title="Jump Days"
@@ -126,7 +126,7 @@ const Home = () => {
           buttonLink="/jump"
         />
         <Box pt={{ base: '5%', md: '0%' }}>
-          <FeatureSection
+          <ImageFeatureSection
             imgSrc="/assets/Frame-1.png"
             altText="skydiving-photo"
             title="Getting your License"
