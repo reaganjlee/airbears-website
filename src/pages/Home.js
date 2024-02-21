@@ -53,12 +53,10 @@ const Home = () => {
             src="/assets/cover-images/bg-gradient.png"
             alt="skydiving-photo"
             boxSize="full"
-            // bgSize="cover"
             display={{ base: 'none', md: 'block' }}
           />
           <Image
             src="/assets/cover-images/iPad-bg.png"
-            // alt="skydiving-photo"
             boxSize="full"
             bgSize="cover"
             alt="Mobile version"
@@ -67,7 +65,6 @@ const Home = () => {
 
           <VStack
             pos="absolute"
-            // pt="10"
             pl={{ base: 8, md: 48 }}
             textAlign="left"
             alignItems="left"
@@ -86,24 +83,12 @@ const Home = () => {
                 <Heading>Air Bears:</Heading>
                 <Heading>Skydiving at Berkeley</Heading>
               </VStack>
-              {/*               
-              <Heading
-                fontSize={{ base: '3xl', md: '6xl' }}
-                display={{ base: 'block', md: 'none' }}
-              >
-                Air Bears: Skydiving at Berkeley
-              </Heading> */}
             </Box>
 
             <Text fontSize={{ base: 'md', md: 'xl' }}>
               We are a student organization that fosters the welcoming community
               of skydivers at UC Berkeley.
             </Text>
-            {/* AirBears at Berkeley is a student-run organization based 
-          at the University of California, Berkeley dedicated to fostering a
-           community of diverse and welcoming individuals by exposing community 
-           members to the incredible and fear-conquering experience of skydiving 
-           in a way that is as accessible as possible. (Est. 1969) */}
 
             <HStack pt={2.5}>
               <BlackButton
@@ -118,7 +103,7 @@ const Home = () => {
       <StatCardRow StatCardData={StatCardData} />
       <Flex padding={10} direction="column">
         <ImageFeatureSection
-          imgSrc="/assets/Frame 2.png"
+          imgSrc="/assets/Frame-2.png"
           altText="skydiving-photo"
           title="Jump Days"
           subtitle="Have the chance to experience the unparalleled rush of 

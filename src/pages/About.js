@@ -51,7 +51,6 @@ const About = () => {
         </Text>
       </Flex>
       <Flex alignItems="center" justify="center" mt={8}>
-        {/* <VStack> */}
         <Text fontSize="3xl" pb={8}>
           Officers
         </Text>
@@ -66,44 +65,44 @@ const About = () => {
         <ProfileCard
           title="Trevor Shin"
           subtitle="President"
-          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          bio=""
           img_name="Trevor Shin - President.png"
         />
         <ProfileCard
           title="Andrew Kim"
           subtitle="Vice President"
-          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          bio=""
           img_name="Andrew Kim - Vice President.png"
         />
 
         <ProfileCard
           title="Savanna Aguayo"
           subtitle="External Head of Operations"
-          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          bio=""
           img_name="Savanna Aguayo - External Head of Operations.png"
         />
         <ProfileCard
           title="Keyla Barcenas"
           subtitle="Internal Head of Operations"
-          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          bio=""
           img_name="Keyla Barcenas - Internal Head of Operations.png"
         />
         <ProfileCard
           title="Isaac Schultz"
           subtitle="Treasurer"
-          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          bio=""
           img_name="Isaac Schultz - Treasurer.png"
         />
         <ProfileCard
           title="Ahmed AlBadrani"
           subtitle="Jump Day Coordinator"
-          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          bio=""
           img_name="Ahmed AlBadrani - Jump Day Coordinator.png"
         />
         <ProfileCard
           title="Zane Levine"
           subtitle="Licensing Coordinator"
-          bio="This is the bio. This is the bio. This is the bio. This is the bio. This is the bio."
+          bio=""
           img_name="Zane Levine - Licensing Coordinator .png"
         />
       </Flex>

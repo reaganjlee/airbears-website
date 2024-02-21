@@ -72,8 +72,8 @@ const License = () => {
           direction={{ base: 'column', md: 'row-reverse' }}
         />
         <ImageFeatureSection
-          imgSrc="/assets/member-thumbs-up.jpg"
-          altText="member-thumbs-up"
+          imgSrc="/assets/thumbs-up.jpg"
+          altText="thumbs-up"
           title={<FullPackageInfo />}
         />
       </Flex>
