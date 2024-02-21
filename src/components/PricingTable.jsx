@@ -30,37 +30,43 @@ import {
 } from '@chakra-ui/react';
 import { TableEntry, StrikedItem } from '../components/TableUtils';
 
-const first_coln_width = '25%';
-
 const PricingTable = () => {
   return (
     <GridItem
       colSpan={1}
-      fontSize={20}
+      fontSize={{ base: 5, md: 20 }}
       textAlign="center"
       spacing={0}
-      gap={2.5}
-      pl={8}
+      pl={{ base: 0, md: 8 }}
     >
       <Box position="relative">
         <Card>
-          <CardBody>
-            <TableContainer padding="1rem" maxW="100%">
-              <Table size="md" alignItems="center">
+          <CardBody fontSize={{ base: '.2rem', md: 20 }}>
+            <TableContainer maxW="100%">
+              <Table
+                size={{ base: 'sm', md: 'md' }}
+                alignItems="center"
+                // __css={{ 'table-layout': 'fixed', width: 'full' }}
+              >
                 <Thead>
                   <Tr>
                     <Th></Th>
-                    <Th textAlign="center" p={2.5}>
-                      With AirBears
+                    <Th
+                      textAlign="center"
+                      //   p={2.5}
+                    >
+                      <Text fontSize={{ base: '.5rem', md: 12 }}>
+                        With AirBears
+                      </Text>
                     </Th>
-                    <Th textAlign="center" p={2.5}>
-                      Regular
+                    <Th textAlign="center">
+                      <Text fontSize={{ base: '.5rem', md: 12 }}>Regular</Text>
                     </Th>
                   </Tr>
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td w={first_coln_width}>
+                    <Td>
                       <TableEntry title="Tandem*" subtitle="See below" />
                     </Td>
                     <Td isNumeric>
@@ -71,7 +77,7 @@ const PricingTable = () => {
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td w={first_coln_width}>
+                    <Td>
                       <TableEntry
                         title="Video Package"
                         subtitle="Capture every moment"
@@ -85,7 +91,7 @@ const PricingTable = () => {
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td w={first_coln_width}>
+                    <Td>
                       <TableEntry
                         title="Food/Transportation"
                         subtitle="Food on-site"
@@ -102,7 +108,11 @@ const PricingTable = () => {
                 <Tfoot>
                   <Tr>
                     <Td colSpan={3}>
-                      <Text fontSize="sm" color="gray.400" fontWeight="normal">
+                      <Text
+                        fontSize={{ base: '.5rem', md: 'sm' }}
+                        color="gray.400"
+                        fontWeight="normal"
+                      >
                         {' '}
                         {/* <TableCaption bg="red" w="100%"> */}
                         *This pays for the instructor, pilot, the plane, and the

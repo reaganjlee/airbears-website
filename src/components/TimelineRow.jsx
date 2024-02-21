@@ -19,7 +19,7 @@ function TimelineComponent(props) {
   const bgIconColor = useColorModeValue('white.300', 'gray.700');
 
   return (
-    <Flex justifyContent="start" mb={2}>
+    <Flex justifyContent="start" mb={2} textAlign="left">
       <Flex direction="column" h={index === arrLength - 1 ? '0rem' : '4rem'}>
         <Icon
           as={logo}

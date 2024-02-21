@@ -54,8 +54,8 @@ const Jump = () => {
         <VStack>
           <SectionContent title="What does skydiving look like?" subtitle="" />
           <iframe
-            width="740"
-            height="472"
+            width="90%"
+            // height="100%"
             src="https://www.youtube.com/embed/kSD-BQ5acrk?si=HTuSAm6_rOYufXHe"
             title="YouTube"
             frameborder="0"
@@ -69,7 +69,7 @@ const Jump = () => {
           tableComponent={<TimelineRow timelineData={timelineData} />}
           title="Schedule"
           subtitle="What does a jump day look like?"
-          direction={{ base: 'column', md: 'row-reverse' }}
+          direction={{ base: 'column-reverse', md: 'row-reverse' }}
         />
 
         <FeatureSection
