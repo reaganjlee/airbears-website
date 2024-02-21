@@ -30,12 +30,24 @@ const About = () => {
         img_name="cover-images/mountain-bg"
       />
       <Flex alignItems="center" justify="center">
-        <Text maxW="80%" fontSize={{ base: 'sm', md: 'xl' }}>
+        <Text maxW="90%" fontSize={{ base: 'sm', md: 'xl' }}>
           AirBears at Berkeley is a student-run organization based at the
           University of California, Berkeley dedicated to fostering a community
           of diverse and welcoming individuals by exposing community members to
           the incredible and fear-conquering experience of skydiving in a way
           that is as accessible as possible. (Est. 1969)
+          <br />
+          <br />
+          As the premier skydiving club of UC Berkeley, we take pride in
+          representing the bold spirit and innovative legacy of our university.
+          Our community embodies the Cal's values of excellence, pushing
+          boundaries, and pursuing passions beyond the conventional, and
+          continue to do so by offering our community members the unique
+          opportunity to explore the skydiving world together. Outside of this,
+          we also strive to have a close-knit community with frequent socials
+          (e.g. climbing days, camping, study nights). Through our services,
+          community members are instilled not only with thrilling skydiving
+          experiences, but also greater leadership, teamwork, and resilience.
         </Text>
       </Flex>
       <Flex alignItems="center" justify="center" mt={8}>

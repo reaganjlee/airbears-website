@@ -26,15 +26,15 @@ import { BlackButton, ColoredButton } from '../components/Button';
 
 const StatCardData = [
   {
-    title: '100+',
+    title: '👥 100+',
     subtitle: 'Members',
   },
   {
-    title: '50+',
+    title: '🎤 50+',
     subtitle: 'Events',
   },
   {
-    title: '90+',
+    title: '🪂 90+',
     subtitle: 'Jumps',
   },
 ];
@@ -121,11 +121,9 @@ const Home = () => {
           imgSrc="/assets/Frame 2.png"
           altText="skydiving-photo"
           title="Jump Days"
-          subtitle="
-        Have an opportunity to experience the 
-        rush of freefall followed by a parachute 
-        glide down with an expert diver
-        "
+          subtitle="Have the chance to experience the unparalleled rush of 
+          freefall, paired with the calm glide down under a parachute, 
+          all alongside an expert diver"
           buttonText="Learn More"
           buttonLink="/jump"
         />
@@ -134,8 +132,9 @@ const Home = () => {
             imgSrc="/assets/Frame-1.png"
             altText="skydiving-photo"
             title="Getting your License"
-            subtitle="Learn to skydive on your own and potentially teach others how to
-          skydive as well!"
+            subtitle="Embark on the thrilling journey of obtaining your 
+            skydiving license with us. Learn to solo skydive and have the 
+            chance to share the experience with the Cal community by teaching others!"
             buttonText="Learn More"
             buttonLink="/license"
             direction={{ base: 'column', md: 'row-reverse' }}

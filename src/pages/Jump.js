@@ -51,31 +51,35 @@ const Jump = () => {
         img_name="cover-images/jump-cover"
       />
       <Flex alignItems="center" justify="center" direction="column">
-        <VStack>
+        <VStack w="full">
           <SectionContent title="What does skydiving look like?" subtitle="" />
-          <iframe
-            width="90%"
-            // height="100%"
+
+          <Box
+            as="iframe"
             src="https://www.youtube.com/embed/kSD-BQ5acrk?si=HTuSAm6_rOYufXHe"
-            title="YouTube"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+            width="70%"
+            sx={{
+              aspectRatio: '16/9',
+            }}
+          />
         </VStack>
       </Flex>
       <VStack pt={8}>
         <FeatureSection
           tableComponent={<TimelineRow timelineData={timelineData} />}
           title="Schedule"
-          subtitle="What does a jump day look like?"
+          subtitle="The day lasts from 7 AM to 4 PM. You'll be paired into a group 
+          to go to our skydiving location in Davis, CA. The day is filled with 
+          excitement as you skydive, and meet others in the skydiving community!"
           direction={{ base: 'column-reverse', md: 'row-reverse' }}
         />
 
         <FeatureSection
           tableComponent={<PricingTable />}
           title="Pricing"
-          subtitle="If you have any questions, please contact us"
+          subtitle="These are our pricing options as of Spring 2024. 
+          If you have any questions or are interested in costs to get a 
+          license, please contact us."
           direction={{ base: 'column', md: 'row-reverse' }}
         />
       </VStack>

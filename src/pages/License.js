@@ -67,8 +67,8 @@ const License = () => {
               p={2.5}
             />
           }
-          title="What can you do with a skydiving license?"
-          subtitle="Skydive by yourself!"
+          title="Skydiving License Benefits?"
+          subtitle="Skydiving by yourself!"
           direction={{ base: 'column', md: 'row-reverse' }}
         />
         <ImageFeatureSection
