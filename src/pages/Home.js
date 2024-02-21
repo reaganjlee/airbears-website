@@ -44,7 +44,11 @@ const Home = () => {
     <>
       <NavBar />
       <Box>
-        <Flex alignItems="center" height="36rem" pos="relative">
+        <Flex
+          alignItems="center"
+          height={{ base: '37.5rem', md: '36rem' }}
+          pos="relative"
+        >
           <Image
             src="/assets/cover-images/bg-gradient.png"
             alt="skydiving-photo"
