@@ -39,7 +39,7 @@ const NavBarItems = isMobile => {
         </Link>
       </Flex>
 
-      <Box pl={{ base: '1', md: '0' }} pt={{ base: '5', md: '0' }}>
+      <Box pl={{ base: '1', md: '0' }}>
         <Link to="https://linktr.ee/calairbears/">
           <Button> Join </Button>
         </Link>
@@ -94,7 +94,7 @@ const NavBar = () => {
         {/* Mobile Links */}
         <Collapse in={isOpen} animateOpacity>
           <Stack
-            bg="gray.500"
+            bg="gray.200"
             p={4}
             display={{ md: 'none' }}
             spacing={4}
