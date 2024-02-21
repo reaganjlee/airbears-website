@@ -80,7 +80,7 @@ const Jump = () => {
           subtitle="These are our pricing options as of Spring 2024. 
           If you have any questions or are interested in costs to get a 
           license, please contact us."
-          direction={{ base: 'column', md: 'row-reverse' }}
+          direction={{ base: 'column-reverse', md: 'row-reverse' }}
         />
       </VStack>
       <Box p={5} />
