@@ -13,7 +13,7 @@ import {
 export function TableEntry({ title, subtitle }) {
   return (
     <Flex direction="column" justifyContent="flex-start" h="100%">
-      <Heading fontSize={{ base: '.7rem', md: 'md' }}>{title}</Heading>
+      <Heading fontSize={{ base: '.75rem', md: 'lg' }}>{title}</Heading>
       <Text
         fontSize={{ base: '.6rem', md: 'sm' }}
         color="gray.400"

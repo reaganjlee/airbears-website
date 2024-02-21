@@ -37,7 +37,7 @@ const License = () => {
         subtitle="Getting Your License"
         img_name="cover-images/license-cover"
       />
-      <Flex alignItems="left" justify="left" w="full">
+      <Flex alignItems="left" justify="left" w="full" pb={10}>
         <VStack w="full">
           <SectionContent
             title="Getting your License"
@@ -52,7 +52,7 @@ const License = () => {
           <Text>After 25 jumps yourself, you're fully certified!</Text>
         </VStack>
       </Flex>
-      <Flex padding={10} direction="column">
+      <Flex direction="column">
         <FeatureSection
           tableComponent={
             <Box
@@ -65,6 +65,7 @@ const License = () => {
                 aspectRatio: '16/9',
               }}
               p={2.5}
+              w="100%"
             />
           }
           title="Skydiving License Benefits?"

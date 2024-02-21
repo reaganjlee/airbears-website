@@ -11,23 +11,27 @@ import {
   VStack,
   Text,
 } from '@chakra-ui/react';
+import { useBreakpointValue } from '@chakra-ui/react';
 
 const StatCard = ({ title, subtitle }) => {
   return (
     <Card justify="center" alignItems="center" m={2} w="full">
-      <Heading fontSize={{ base: 'md', md: '4xl' }} pb={1} pt={8}>
-        {title}
-      </Heading>
-      <CardBody fontSize={{ base: 'sm', md: '2xl' }} pt={0} pb={8}>
-        {subtitle}
-      </CardBody>
+      <VStack pt={4} pb={4}>
+        <Heading fontSize={{ base: '3xl', md: '4xl' }} pb={1}>
+          {title}
+        </Heading>
+        <CardBody fontSize={{ base: 'xl', md: '2xl' }} pt={0} pb={0}>
+          {subtitle}
+        </CardBody>
+      </VStack>
     </Card>
   );
 };
 function StatCardRow({ StatCardData }) {
+  const direction = useBreakpointValue({ base: 'column', md: 'row' });
   return (
     <Flex justify="center" mt="2%">
-      <Flex w="64%">
+      <Flex w="64%" direction={direction}>
         {StatCardData.map((card, index, arr) => {
           return <StatCard title={card.title} subtitle={card.subtitle} />;
         })}

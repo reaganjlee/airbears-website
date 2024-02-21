@@ -21,7 +21,8 @@ import { Link } from 'react-router-dom';
 
 import React from 'react';
 
-const NavBarItems = isMobile => {
+const NavBarItems = () => {
+  const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
       <Flex as="nav" spacing="5" direction={{ base: 'column', md: 'row' }}>
@@ -37,11 +38,14 @@ const NavBarItems = isMobile => {
         <Link to="/jump">
           <Button variant="nav"> Jump </Button>
         </Link>
+        <Link to="https://linktr.ee/calairbears/">
+          {isMobile && <Button variant="nav"> Join </Button>}
+        </Link>
       </Flex>
 
-      <Box pl={{ base: '1', md: '0' }}>
+      <Box pl={{ base: '0', md: '0' }}>
         <Link to="https://linktr.ee/calairbears/">
-          <Button> Join </Button>
+          {!isMobile && <Button> Join </Button>}
         </Link>
       </Box>
     </>
@@ -50,10 +54,10 @@ const NavBarItems = isMobile => {
 
 const NavBar = () => {
   const { isOpen, onToggle } = useDisclosure();
-  console.log(isOpen);
+  // console.log(isOpen);
 
   const isMobile = useBreakpointValue({ base: true, md: false });
-  console.log(isMobile);
+  // console.log(isMobile);
 
   return (
     <chakra.header id="header">
@@ -84,23 +88,19 @@ const NavBar = () => {
             <Button variant="nav"> AirBears </Button>
           </Link>
           {/* Desktop Links */}
-          {!isMobile && (
-            // <Stack direction={'row'} spacing={4}>
-            <NavBarItems />
-            // </Stack>
-          )}
+          {!isMobile && <NavBarItems isMobile={isMobile} />}
         </Flex>
 
         {/* Mobile Links */}
         <Collapse in={isOpen} animateOpacity>
           <Stack
-            bg="gray.200"
+            // bg="gray.200"
             p={4}
             display={{ md: 'none' }}
             spacing={4}
             flexDirection="column"
           >
-            <NavBarItems />
+            <NavBarItems isMobile={isMobile} />
           </Stack>
         </Collapse>
       </Box>

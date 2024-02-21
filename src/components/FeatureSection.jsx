@@ -22,7 +22,7 @@ export const ImageFeatureSection = ({
   direction = { base: 'column', md: 'row' },
 }) => {
   return (
-    <Flex direction={direction} w="100%">
+    <Flex direction={direction} w="100%" pb={{ base: 10, md: '0%' }}>
       <Flex
         maxW={{ base: '100%', md: '50%' }}
         maxH="30rem"
@@ -64,7 +64,7 @@ export const FeatureSection = ({
   direction = { base: 'column', md: 'row' },
 }) => {
   return (
-    <Flex direction={direction} w="full">
+    <Flex direction={direction} w="full" pb={{ base: 10, md: '0%' }}>
       <Flex
         w={{ base: '100%', md: '50%' }}
         justifyContent="center"

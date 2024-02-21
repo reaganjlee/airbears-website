@@ -24,7 +24,13 @@ import SectionContent from '../components/SectionContent';
 
 const FullPackageInfo = () => {
   return (
-    <VStack p={8} align="left" rounded="lg" textAlign="left">
+    <VStack
+      alignItems="left"
+      rounded="lg"
+      textAlign="left"
+      w="80%"
+      align="center"
+    >
       <SectionContent title="What do I need?" subtitle="" />
       {/* <Heading fontSize={{ base: '2xl', md: 'md' }}>What do I need?</Heading> */}
       <Box w="full">

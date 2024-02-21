@@ -101,7 +101,7 @@ const Home = () => {
         </Flex>
       </Box>
       <StatCardRow StatCardData={StatCardData} />
-      <Flex padding={10} direction="column">
+      <Flex direction="column">
         <ImageFeatureSection
           imgSrc="/assets/Frame-2.png"
           altText="skydiving-photo"
@@ -112,7 +112,7 @@ const Home = () => {
           buttonText="Learn More"
           buttonLink="/jump"
         />
-        <Box pt={{ base: '5%', md: '0%' }}>
+        <Box>
           <ImageFeatureSection
             imgSrc="/assets/Frame-1.png"
             altText="skydiving-photo"

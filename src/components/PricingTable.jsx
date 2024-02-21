@@ -41,11 +41,12 @@ const PricingTable = () => {
     >
       <Box position="relative">
         <Card>
-          <CardBody fontSize={{ base: '.2rem', md: 20 }}>
+          <CardBody>
             <TableContainer maxW="100%">
               <Table
                 size={{ base: 'sm', md: 'md' }}
                 alignItems="center"
+
                 // __css={{ 'table-layout': 'fixed', width: 'full' }}
               >
                 <Thead>
@@ -55,12 +56,14 @@ const PricingTable = () => {
                       textAlign="center"
                       //   p={2.5}
                     >
-                      <Text fontSize={{ base: '.5rem', md: 12 }}>
+                      <Text fontSize={{ base: '.75rem', md: 'lg' }}>
                         With AirBears
                       </Text>
                     </Th>
                     <Th textAlign="center">
-                      <Text fontSize={{ base: '.5rem', md: 12 }}>Regular</Text>
+                      <Text fontSize={{ base: '.75rem', md: 'lg' }}>
+                        Regular
+                      </Text>
                     </Th>
                   </Tr>
                 </Thead>
