@@ -44,7 +44,7 @@ const PricingTable = () => {
           <CardBody>
             <TableContainer maxW="100%">
               <Table
-                size={{ base: 'sm', md: 'md' }}
+                size={{ base: 'sm', md: 'sm', xl: 'md' }}
                 alignItems="center"
 
                 // __css={{ 'table-layout': 'fixed', width: 'full' }}
@@ -56,12 +56,17 @@ const PricingTable = () => {
                       textAlign="center"
                       //   p={2.5}
                     >
-                      <Text fontSize={{ base: '.75rem', md: 'lg' }}>
+                      <Text
+                        fontSize={{
+                          base: '.75rem',
+                          md: 'md',
+                        }}
+                      >
                         With AirBears
                       </Text>
                     </Th>
                     <Th textAlign="center">
-                      <Text fontSize={{ base: '.75rem', md: 'lg' }}>
+                      <Text fontSize={{ base: '.75rem', md: 'md' }}>
                         Regular
                       </Text>
                     </Th>
