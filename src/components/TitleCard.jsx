@@ -15,7 +15,13 @@ const TitleCard = ({ title, subtitle, img_name }) => {
       <Text fontSize="xl" pb={8}>
         {subtitle}
       </Text>
-      <Image src={`/assets/${img_name}.png`} alt={img_name} maxH={'34rem'} />
+      <Image
+        src={`/assets/${img_name}.png`}
+        alt={img_name}
+        w="100%"
+        maxW="1440px"
+      />
+      {/* maxH={'34rem'} */}
     </Flex>
   );
 };

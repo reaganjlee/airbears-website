@@ -25,7 +25,12 @@ const NavBarItems = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
-      <Flex as="nav" spacing="5" direction={{ base: 'column', md: 'row' }}>
+      <Flex
+        as="nav"
+        spacing="5"
+        direction={{ base: 'column', md: 'row' }}
+        // h="5vh"
+      >
         <Link to="/">
           <Button variant="nav"> Home </Button>
         </Link>

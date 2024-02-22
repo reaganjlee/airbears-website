@@ -23,6 +23,7 @@ import SectionContent from '../components/SectionContent';
 import { ImageFeatureSection } from '../components/FeatureSection';
 import StatCardRow from '../components/StatCardRow';
 import { BlackButton, ColoredButton } from '../components/Button';
+import Page from '../components/Page';
 
 const StatCardData = [
   {
@@ -44,22 +45,18 @@ const Home = () => {
     <>
       <NavBar />
       <Box>
-        <Flex
-          alignItems="center"
-          height={{ base: '37.5rem', md: '36rem' }}
-          pos="relative"
-        >
+        <Flex alignItems="center" h="80vh" pos="relative" maxH="800px">
           <Image
-            src="/assets/cover-images/bg-gradient.png"
-            alt="skydiving-photo"
+            src="/assets/cover-images/home-bg-desktop.png"
+            alt="Desktop background"
             boxSize="full"
             display={{ base: 'none', md: 'block' }}
           />
           <Image
-            src="/assets/cover-images/iPad-bg.png"
+            src="/assets/cover-images/home-bg-phone.png"
             boxSize="full"
             bgSize="cover"
-            alt="Mobile version"
+            alt="Mobile background"
             display={{ base: 'block', md: 'none' }}
           />
 
@@ -100,33 +97,37 @@ const Home = () => {
           </VStack>
         </Flex>
       </Box>
-      <StatCardRow StatCardData={StatCardData} />
-      <Flex direction="column">
-        <ImageFeatureSection
-          imgSrc="/assets/Frame-2.png"
-          altText="skydiving-photo"
-          title="Jump Days"
-          subtitle="Have the chance to experience the unparalleled rush of 
+      <Flex justify="center" alignItems="center">
+        <Box maxW="1440px">
+          <StatCardRow StatCardData={StatCardData} />
+          <Flex direction="column" alignItems="center">
+            <ImageFeatureSection
+              imgSrc="/assets/Frame-2.png"
+              altText="skydiving-photo"
+              title="Jump Days"
+              subtitle="Have the chance to experience the unparalleled rush of 
           freefall, paired with the calm glide down under a parachute, 
           all alongside an expert diver"
-          buttonText="Learn More"
-          buttonLink="/jump"
-        />
-        <Box>
-          <ImageFeatureSection
-            imgSrc="/assets/Frame-1.png"
-            altText="skydiving-photo"
-            title="Getting your License"
-            subtitle="Embark on the thrilling journey of obtaining your 
+              buttonText="Learn More"
+              buttonLink="/jump"
+            />
+            <Box>
+              <ImageFeatureSection
+                imgSrc="/assets/Frame-1.png"
+                altText="skydiving-photo"
+                title="Getting your License"
+                subtitle="Embark on the thrilling journey of obtaining your 
             skydiving license with us. Learn to solo skydive and have the 
             chance to share the experience with the Cal community by teaching others!"
-            buttonText="Learn More"
-            buttonLink="/license"
-            direction={{ base: 'column', md: 'row-reverse' }}
-          />
+                buttonText="Learn More"
+                buttonLink="/license"
+                direction={{ base: 'column', md: 'row-reverse' }}
+              />
+            </Box>
+          </Flex>
+          <Footer />
         </Box>
       </Flex>
-      <Footer />
     </>
   );
 };

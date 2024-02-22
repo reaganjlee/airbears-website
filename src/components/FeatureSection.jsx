@@ -22,7 +22,12 @@ export const ImageFeatureSection = ({
   direction = { base: 'column', md: 'row' },
 }) => {
   return (
-    <Flex direction={direction} w="100%" pb={{ base: 10, md: '0%' }}>
+    <Flex
+      direction={direction}
+      w="100%"
+      pb={{ base: 10, md: '0%' }}
+      // maxW="1440px"
+    >
       <Flex
         maxW={{ base: '100%', md: '50%' }}
         maxH="30rem"
