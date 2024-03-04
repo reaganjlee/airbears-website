@@ -9,12 +9,6 @@ const theme = extendTheme({
   fonts: {
     heading: `'Poppins', sans-serif`,
     body: `'Open Sans', sans-serif`,
-    // body: `montserrat-alternates', sans-serif`,
-    // mono: `montserrat-alternates', sans-serif`,
-    // heading: `montserrat-alternates', sans-serif`,
-    // body: `montserrat-alternates', sans-serif`,
-    // heading: `'josefin-sans', montserrat`,
-    // body: `'heebo', montserrat`,
   },
 });
 

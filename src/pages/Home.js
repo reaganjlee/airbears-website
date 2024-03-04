@@ -82,9 +82,11 @@ const Home = () => {
               </VStack>
             </Box>
 
-            <Text fontSize={{ base: 'md', md: 'xl' }}>
-              We are a student organization that fosters the welcoming community
-              of skydivers at UC Berkeley.
+            <Text fontSize={{ base: 'md', md: 'lg' }} w="90%">
+              Fostering a community of diverse and welcoming individuals by
+              exposing UC Berkeley community members to the incredible and
+              fear-conquering experience of skydiving in a way that is as
+              accessible as possible.
             </Text>
 
             <HStack pt={2.5}>
@@ -107,23 +109,22 @@ const Home = () => {
               title="Jump Days"
               subtitle="Have the chance to experience the unparalleled rush of 
           freefall, paired with the calm glide down under a parachute, 
-          all alongside an expert diver"
+          all alongside an expert diver."
               buttonText="Learn More"
               buttonLink="/jump"
             />
-            <Box>
-              <ImageFeatureSection
-                imgSrc="/assets/Frame-1.png"
-                altText="skydiving-photo"
-                title="Getting your License"
-                subtitle="Embark on the thrilling journey of obtaining your 
+
+            <ImageFeatureSection
+              imgSrc="/assets/Frame-1.png"
+              altText="skydiving-photo"
+              title="Getting your License"
+              subtitle="Embark on the thrilling journey of obtaining your 
             skydiving license with us. Learn to solo skydive and have the 
             chance to share the experience with the Cal community by teaching others!"
-                buttonText="Learn More"
-                buttonLink="/license"
-                direction={{ base: 'column', md: 'row-reverse' }}
-              />
-            </Box>
+              buttonText="Learn More"
+              buttonLink="/license"
+              direction={{ base: 'column', md: 'row-reverse' }}
+            />
           </Flex>
           <Footer />
         </Box>

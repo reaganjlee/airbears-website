@@ -70,7 +70,17 @@ const Jump = () => {
           title="Schedule"
           subtitle="The day lasts from 7 AM to 4 PM. You'll be paired into a group 
           to go to our skydiving location in Davis, CA. The day is filled with 
-          excitement as you skydive, and meet others in the skydiving community!"
+          excitement as you skydive, and meet others in the skydiving community! 
+          
+          \n \nNote that the schedule is always subject to change depending on weather 
+          and/or other unforeseen circumstances.
+          
+          \n\nTo sign up for a Jump Day, you MUST BE AN OFFICIAL MEMBER to register. 
+          Members will be notified of an upcoming Jump Day through email. Jump Day 
+          attendees are selected on a first come first serve basis. Any member not 
+          selected to go on the Jump Day has the option to be put on a waitlist. The last 
+          day to register for a Jump Day is by 5 pm, 2 days before the scheduled Jump Day. 
+          NO EXCEPTIONS."
           direction={{ base: 'column-reverse', md: 'row-reverse' }}
         />
 

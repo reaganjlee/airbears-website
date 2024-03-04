@@ -18,6 +18,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import License from './pages/License';
 import Jump from './pages/Jump';
+import Join from './pages/Join';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: '/jump',
         element: <Jump />,
+      },
+      {
+        path: '/join',
+        element: <Join />,
       },
     ],
   },

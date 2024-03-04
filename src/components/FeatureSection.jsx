@@ -46,7 +46,8 @@ export const ImageFeatureSection = ({
         alignItems="center"
         display="flex"
         justifyContent="center"
-        maxW={{ base: '100%', md: '50%' }}
+        // maxW={{ base: '100%', md: '50%' }}
+        w={{ base: '100%', md: '50%' }}
         pt={{ base: '5%', md: '0%' }}
       >
         <VStack>

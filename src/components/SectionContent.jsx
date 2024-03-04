@@ -13,25 +13,31 @@ import {
 import React from 'react';
 
 const IfContactUsText = ({ text }) => {
-  const hasContactUs = text.toLowerCase().includes('contact us');
-  if (hasContactUs) {
-    const parts = text.split(/(contact us)/i);
-    return parts.map((part, index) =>
-      /contact us/i.test(part) ? (
-        <Link
-          key={index}
-          href="https://linktr.ee/calairbears/"
-          color="gray.500"
-        >
-          {part}
-        </Link>
-      ) : (
-        <React.Fragment key={index}>{part}</React.Fragment>
-      )
-    );
-  } else {
-    return <>{text}</>;
-  }
+  const renderTextWithLinksAndNewlines = text => {
+    // Split the text by new lines first
+    return text.split('\\n').map((line, lineIndex, lineArray) => (
+      <React.Fragment key={lineIndex}>
+        {/* Split by "contact us" and map to either a Link or span */}
+        {line.split(/(contact us)/i).map((part, partIndex) =>
+          /contact us/i.test(part) ? (
+            <Link
+              key={partIndex}
+              href="mailto:airbearssc@gmail.com"
+              color="gray.500"
+            >
+              {part}
+            </Link>
+          ) : (
+            <span key={partIndex}>{part}</span>
+          )
+        )}
+        {/* Add a <br /> element after each line except the last one */}
+        {lineIndex < lineArray.length - 1 && <br />}
+      </React.Fragment>
+    ));
+  };
+
+  return <>{renderTextWithLinksAndNewlines(text)}</>;
 };
 const SectionContent = ({
   title,

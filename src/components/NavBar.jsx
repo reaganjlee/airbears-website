@@ -43,15 +43,13 @@ const NavBarItems = () => {
         <Link to="/jump">
           <Button variant="nav"> Jump </Button>
         </Link>
-        <Link to="https://linktr.ee/calairbears/">
+        <Link to="/join">
           {isMobile && <Button variant="nav"> Join </Button>}
         </Link>
       </Flex>
 
       <Box pl={{ base: '0', md: '0' }}>
-        <Link to="https://linktr.ee/calairbears/">
-          {!isMobile && <Button> Join </Button>}
-        </Link>
+        <Link to="/join">{!isMobile && <Button> Join </Button>}</Link>
       </Box>
     </>
   );
