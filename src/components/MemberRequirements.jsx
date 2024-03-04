@@ -36,7 +36,7 @@ const MemberRequirements = () => {
         subtitle=""
       />
       <Box w="full">
-        <Text>To become a member you must:</Text>
+        <Text>Membership Requirements</Text>
       </Box>
       <Box w="60%">
         <UnorderedList pl={2.5} textAlign="left">
