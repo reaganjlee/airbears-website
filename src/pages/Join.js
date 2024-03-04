@@ -66,7 +66,47 @@ const Join = () => {
             imgSrc="/assets/Frame 5.png"
             altText="skydiving-photo"
             title="Socials and Additional Benefits"
-            subtitle="Embrace a suite of perks including vibrant game nights, adventurous camping trips, exhilarating climbing experiences and more."
+            subtitle={
+              <VStack
+              // alignItems="left"
+              // rounded="lg"
+              // textAlign="left"
+              // w="80%"
+              // align="center"
+              >
+                <Text>
+                  Join us for meetings on Tuesday, 6-7pm, Wheeler 126, followed
+                  by Taco Tuesday at Raleigh's. At the meeting we will be
+                  having:
+                </Text>
+                <Box
+                  w={{ base: '90%', md: '60%' }}
+                  justify="center"
+                  alignItems="center"
+                  pt={0}
+                >
+                  <UnorderedList
+                    pl={2.5}
+                    textAlign="left"
+                    // fontSize={{ base: 'lg', md: 'lg' }}
+                  >
+                    <ListItem>Jump Day logistics</ListItem>
+                    <ListItem>
+                      Club Socials
+                      <UnorderedList>
+                        <ListItem>Climbing days</ListItem>
+                        <ListItem>Movie nights</ListItem>
+                        <ListItem>Study nights</ListItem>
+                      </UnorderedList>
+                    </ListItem>
+
+                    <ListItem>General skydiving meetings</ListItem>
+                    <ListItem>Licensing meetings</ListItem>
+                    <ListItem>Good vibes</ListItem>
+                  </UnorderedList>
+                </Box>
+              </VStack>
+            }
             direction={{ base: 'column', md: 'row-reverse' }}
           />
           <Box p={5} />

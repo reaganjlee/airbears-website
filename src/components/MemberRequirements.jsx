@@ -38,8 +38,8 @@ const MemberRequirements = () => {
       <Box w="full">
         <Text>Membership Requirements</Text>
       </Box>
-      <Box w="60%">
-        <UnorderedList pl={2.5} textAlign="left">
+      <Box w={{ base: '90%', md: '60%' }}>
+        <OrderedList pl={2.5} textAlign="left">
           <ListItem>
             Pay a membership fee of $30 (this money goes towards socials, Jump
             Day transportation, and food) to our venmo @airbears
@@ -51,7 +51,7 @@ const MemberRequirements = () => {
             Submit a membership intake form found in our{' '}
             <Link to="/">linktree</Link>
           </ListItem>
-        </UnorderedList>
+        </OrderedList>
       </Box>
       <Box>
         <SectionContent
