@@ -22,6 +22,8 @@ import {
 } from '@chakra-ui/react';
 import SectionContent from '../components/SectionContent';
 
+const LINKTREE_URL = 'https://linktr.ee/calairbears/';
+
 const MemberRequirements = () => {
   return (
     <VStack
@@ -45,11 +47,12 @@ const MemberRequirements = () => {
             Day transportation, and food) to our venmo @airbears
           </ListItem>
           <ListItem>
-            Sign the Air Bears Waiver found in our <Link to="/">linktree</Link>
+            Sign the Air Bears Waiver found in our{' '}
+            <Link href={LINKTREE_URL}>linktree</Link>
           </ListItem>
           <ListItem>
             Submit a membership intake form found in our{' '}
-            <Link to="/">linktree</Link>
+            <Link href={LINKTREE_URL}>linktree</Link>
           </ListItem>
         </OrderedList>
       </Box>

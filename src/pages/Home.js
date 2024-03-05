@@ -90,10 +90,7 @@ const Home = () => {
             </Text>
 
             <HStack pt={2.5}>
-              <BlackButton
-                text="Join Us"
-                href="https://linktr.ee/calairbears/"
-              />
+              <BlackButton text="Join Us" href="/join" />
               <ColoredButton text="Learn More" to="/about" />
             </HStack>
           </VStack>
