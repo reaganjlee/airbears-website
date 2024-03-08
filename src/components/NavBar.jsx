@@ -86,14 +86,16 @@ const NavBar = () => {
                 {!isMobile && (
                   <Image
                     src="/assets/Frame 9.png"
-                    boxSize="full"
+                    objectFit="contain"
+                    boxSize="8rem"
                     alt="AirBears"
                   />
                 )}
                 {isMobile && (
                   <Image
                     src="/airbears-logo-512.png"
-                    boxSize="full"
+                    objectFit="contain"
+                    boxSize="3rem"
                     alt="AirBears"
                   />
                 )}
