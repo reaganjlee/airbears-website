@@ -42,7 +42,7 @@ const NavBarItems = () => {
         </Link>
       </Flex>
 
-      <Box pl={{ base: '0', md: '0' }}>
+      <Box pl="0">
         <Link to="/join">{!isMobile && <Button> Join </Button>}</Link>
       </Box>
     </>
@@ -79,7 +79,25 @@ const NavBar = () => {
             />
           )}
           <Link to="/">
-            <Button variant="nav"> AirBears </Button>
+            {/* <Button variant="nav"> AirBears </Button> */}
+            <Button variant="nav">
+              {' '}
+              {!isMobile && (
+                <Image
+                  src="/assets/Frame 9.png"
+                  boxSize="full"
+                  alt="AirBears"
+                />
+              )}
+              {isMobile && (
+                <Image
+                  src="/airbears-logo-512.png"
+                  boxSize="full"
+                  alt="AirBears"
+                />
+              )}
+              {/* Air Bears */}
+            </Button>
           </Link>
           {/* Desktop Links */}
           {!isMobile && <NavBarItems isMobile={isMobile} />}
