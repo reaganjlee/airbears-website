@@ -77,7 +77,7 @@ const Home = () => {
                 fontSize={{ base: '3xl', md: '6xl' }}
                 display={{ base: 'block', md: 'none' }}
               >
-                <Heading>Air Bears:</Heading>
+                <Heading>Air Bears - </Heading>
                 <Heading>Skydiving at Berkeley</Heading>
               </VStack>
             </Box>
