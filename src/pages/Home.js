@@ -71,7 +71,7 @@ const Home = () => {
                 fontSize={{ base: '3xl', md: '6xl' }}
                 display={{ base: 'none', md: 'block' }}
               >
-                Air Bears: Skydiving at Berkeley
+                Air Bears - Skydiving at Berkeley
               </Heading>
               <VStack
                 fontSize={{ base: '3xl', md: '6xl' }}

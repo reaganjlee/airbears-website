@@ -78,7 +78,7 @@ const Footer = () => {
             </ListItem>
             <ListItem>
               {' '}
-              Made with ❤️ &nbsp;by{' '}
+              Made with ❤️&nbsp;by{' '}
               <Link href="https://www.linkedin.com/in/reaganjlee/">
                 Reagan Lee
               </Link>

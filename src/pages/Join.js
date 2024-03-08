@@ -58,7 +58,7 @@ const Join = () => {
             // chance to share the experience with the Cal community by teaching others!"
             // title="blah"
             // title="- AirBears jump discount \n - Group jump days "
-            title={'Group jump days'}
+            title={'Group Jump Days'}
             subtitle="Dive into the thrill with us on club-wide jump days and enjoy exclusive discounts to members!"
           />
 
