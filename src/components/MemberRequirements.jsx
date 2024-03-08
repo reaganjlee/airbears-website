@@ -62,7 +62,6 @@ const MemberRequirements = () => {
           subtitle="Once you have completed these steps you are an official member and you will be added to our mailing list in 3-5 business days. If you have completed these steps and have not received any emails from us, please contact us.
 
           \n\n If you fail to complete any one of these steps you are NOT an official member of this club and are NOT ELIGIBLE to receive Air Bears benefits including: access to Air Bears discount, signing up for jump days, socials, and other perks."
-          // textAlign="left"
           subtitle_maxW="100%"
         />
       </Box>

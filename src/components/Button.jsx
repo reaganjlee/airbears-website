@@ -12,7 +12,6 @@ import {
   ListItem,
   Box,
 } from '@chakra-ui/react';
-// import { Link } from 'react-scroll';
 import React from 'react';
 import { FaInstagram, FaSlack } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
@@ -49,11 +48,10 @@ export const ColoredButton = ({ text, to, href }) => {
     if (to) {
       navigate(to);
     } else if (href) {
-      window.location.href = href; // This will navigate to an external link
+      window.location.href = href;
     }
   };
   const lineColor = '#93827F';
-  // AED7F5
   return (
     <Button
       variant="outline"

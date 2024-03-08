@@ -1,5 +1,4 @@
 import { extendTheme } from '@chakra-ui/react';
-// import '@fontsource/montserrat-alternates';
 import '@fontsource/rajdhani';
 import '@fontsource/heebo';
 import '@fontsource/josefin-sans';

@@ -16,7 +16,6 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-// import { Link } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
 import React from 'react';
@@ -25,12 +24,7 @@ const NavBarItems = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
-      <Flex
-        as="nav"
-        spacing="5"
-        direction={{ base: 'column', md: 'row' }}
-        // h="5vh"
-      >
+      <Flex as="nav" spacing="5" direction={{ base: 'column', md: 'row' }}>
         <Link to="/">
           <Button variant="nav"> Home </Button>
         </Link>
@@ -57,11 +51,8 @@ const NavBarItems = () => {
 
 const NavBar = () => {
   const { isOpen, onToggle } = useDisclosure();
-  // console.log(isOpen);
 
   const isMobile = useBreakpointValue({ base: true, md: false });
-  // console.log(isMobile);
-
   return (
     <chakra.header id="header">
       <Box>
@@ -97,7 +88,6 @@ const NavBar = () => {
         {/* Mobile Links */}
         <Collapse in={isOpen} animateOpacity>
           <Stack
-            // bg="gray.200"
             p={4}
             display={{ md: 'none' }}
             spacing={4}

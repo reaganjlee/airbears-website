@@ -12,7 +12,6 @@ import {
   ListItem,
   Box,
 } from '@chakra-ui/react';
-// import { Link } from 'react-scroll';
 import React from 'react';
 import { FaInstagram, FaSlack } from 'react-icons/fa';
 
@@ -22,13 +21,7 @@ const Footer = () => {
   return (
     <chakra.footer id="footer">
       <Flex justifyContent="center">
-        <VStack
-          alignItems="center"
-          justify="center"
-          paddingBottom={5}
-          w="90%"
-          // align="90%"
-        >
+        <VStack alignItems="center" justify="center" paddingBottom={5} w="90%">
           <HStack>
             <Link
               href="https://www.instagram.com/calairbears"

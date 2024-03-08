@@ -21,7 +21,6 @@ const TitleCard = ({ title, subtitle, img_name }) => {
         w="100%"
         maxW="1440px"
       />
-      {/* maxH={'34rem'} */}
     </Flex>
   );
 };

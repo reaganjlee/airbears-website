@@ -8,7 +8,7 @@ import {
   Text,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom'; // Assuming you're using react-router for navigation
+import { Link as RouterLink } from 'react-router-dom';
 import SectionContent from '../components/SectionContent';
 import { BlackButton, ColoredButton } from '../components/Button';
 
@@ -22,12 +22,7 @@ export const ImageFeatureSection = ({
   direction = { base: 'column', md: 'row' },
 }) => {
   return (
-    <Flex
-      direction={direction}
-      w="100%"
-      pb={{ base: 10, md: '0%' }}
-      // maxW="1440px"
-    >
+    <Flex direction={direction} w="100%" pb={{ base: 10, md: '0%' }}>
       <Flex
         maxW={{ base: '100%', md: '50%' }}
         maxH="30rem"
@@ -46,7 +41,6 @@ export const ImageFeatureSection = ({
         alignItems="center"
         display="flex"
         justifyContent="center"
-        // maxW={{ base: '100%', md: '50%' }}
         w={{ base: '100%', md: '50%' }}
         pt={{ base: '5%', md: '0%' }}
       >

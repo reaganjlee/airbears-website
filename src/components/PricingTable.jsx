@@ -46,16 +46,11 @@ const PricingTable = () => {
               <Table
                 size={{ base: 'sm', md: 'sm', xl: 'md' }}
                 alignItems="center"
-
-                // __css={{ 'table-layout': 'fixed', width: 'full' }}
               >
                 <Thead>
                   <Tr>
                     <Th></Th>
-                    <Th
-                      textAlign="center"
-                      //   p={2.5}
-                    >
+                    <Th textAlign="center">
                       <Text
                         fontSize={{
                           base: '.75rem',
@@ -122,10 +117,8 @@ const PricingTable = () => {
                         fontWeight="normal"
                       >
                         {' '}
-                        {/* <TableCaption bg="red" w="100%"> */}
                         *This pays for the instructor, pilot, the plane, and the
                         parachute itself
-                        {/* </TableCaption> */}
                       </Text>{' '}
                     </Td>
                   </Tr>

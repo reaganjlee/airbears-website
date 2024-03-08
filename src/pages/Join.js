@@ -39,25 +39,16 @@ const Join = () => {
         img_name="cover-images/join-cover"
       />
       <Flex alignItems="left" justify="left" w="full" pb={10}>
-        {/* <VStack w="full"> */}
         <SectionContent
           title="Being a member comes with perks..."
           subtitle=""
         />
-
-        {/* </VStack> */}
       </Flex>
       <Box maxW="1440px">
         <Flex direction="column" alignItems="center" justify="center">
           <ImageFeatureSection
             imgSrc="/assets/Frame 6.png"
             altText="skydiving-backpack"
-            // title="Getting your License"
-            // subtitle="Embark on the thrilling journey of obtaining your
-            // skydiving license with us. Learn to solo skydive and have the
-            // chance to share the experience with the Cal community by teaching others!"
-            // title="blah"
-            // title="- AirBears jump discount \n - Group jump days "
             title={'Group Jump Days'}
             subtitle="Dive into the thrill with us on club-wide jump days and enjoy exclusive discounts to members!"
           />
@@ -67,13 +58,7 @@ const Join = () => {
             altText="skydiving-photo"
             title="Socials and Additional Benefits"
             subtitle={
-              <VStack
-              // alignItems="left"
-              // rounded="lg"
-              // textAlign="left"
-              // w="80%"
-              // align="center"
-              >
+              <VStack>
                 <Text>
                   Join us for meetings on Tuesday, 6-7pm, Wheeler 126, followed
                   by Taco Tuesday at Raleigh's. At the meeting we will be
@@ -85,11 +70,7 @@ const Join = () => {
                   alignItems="center"
                   pt={0}
                 >
-                  <UnorderedList
-                    pl={2.5}
-                    textAlign="left"
-                    // fontSize={{ base: 'lg', md: 'lg' }}
-                  >
+                  <UnorderedList pl={2.5} textAlign="left">
                     <ListItem>Jump Day logistics</ListItem>
                     <ListItem>
                       Club Socials

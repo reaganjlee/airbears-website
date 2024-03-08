@@ -32,7 +32,6 @@ const FullPackageInfo = () => {
       align="center"
     >
       <SectionContent title="What do I need?" subtitle="" />
-      {/* <Heading fontSize={{ base: '2xl', md: 'md' }}>What do I need?</Heading> */}
       <Box w="full">
         <Text>The full package includes:</Text>
       </Box>

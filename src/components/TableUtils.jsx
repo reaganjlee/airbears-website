@@ -29,7 +29,7 @@ export function TableEntry({ title, subtitle }) {
 
 export function StrikedItem({ content }) {
   // Theres a bug with the ChakraUI removing alignment
-  // if you use strikethrough, requiring this
+  // when you use strikethrough, requiring this
   return (
     <Box textAlign="center">
       <Text as="s">{content}</Text>

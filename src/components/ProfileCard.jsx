@@ -14,7 +14,6 @@ import { useBreakpointValue } from '@chakra-ui/react';
 const ProfileCard = ({ title, subtitle, bio, img_name }) => {
   const profile_size = useBreakpointValue({ base: '6rem', md: '12rem' });
   const bio_size = useBreakpointValue({ base: '9rem', md: '18rem' });
-  // 24, 48
   const width = useBreakpointValue({ base: '40%', md: '40%' });
   const headerFont = useBreakpointValue({ base: 'md', md: 'lg' });
   const textFont = useBreakpointValue({ base: 'sm', md: 'md' });
@@ -52,15 +51,7 @@ const ProfileCard = ({ title, subtitle, bio, img_name }) => {
       <Text w={profile_size} color="gray.700" align="center">
         {subtitle}
       </Text>
-      <Text
-        // w={`calc(${profile_size} * 1.5)`}
-        // w={profile_size}
-        w={bio_size}
-        color="gray.500"
-        fontSize="sm"
-        pb={8}
-        align="center"
-      >
+      <Text w={bio_size} color="gray.500" fontSize="sm" pb={8} align="center">
         {formattedBio}
       </Text>
     </Flex>
