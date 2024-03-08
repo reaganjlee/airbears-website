@@ -58,7 +58,7 @@ const About = () => {
         pb={8}
       >
         <Text fontSize="3xl">Officers</Text>
-        <Text fontSize="sm">
+        <Text fontSize="lg">
           If you could skydive anywhere (or off anywhere) where would it be?
         </Text>
       </Flex>
@@ -72,7 +72,7 @@ const About = () => {
         <ProfileCard
           title="Trevor Shin"
           subtitle="President"
-          bio="2nd year\nBusiness/Econ Major\nIf I could skydive anywhere it would be over the Hawaiian Islands"
+          bio="2nd year\nBusiness/Econ Major\nIf I could skydive anywhere it would be over the Hawaiian Islands."
           img_name="Trevor Shin - President.png"
         />
         <ProfileCard
@@ -91,25 +91,25 @@ const About = () => {
         <ProfileCard
           title="Keyla Barcenas"
           subtitle="Internal Head of Operations"
-          bio="2nd year\nStatistics\nIf I could skydive off of anywhere it would be the Thundering Rock floating islands from the movie Avatar"
+          bio="2nd year\nStatistics\nIf I could skydive off of anywhere it would be the Thundering Rock floating islands from the movie Avatar."
           img_name="Keyla Barcenas - Internal Head of Operations.png"
         />
         <ProfileCard
           title="Isaac Schultz"
           subtitle="Treasurer"
-          bio="4th year\nMechnical Engineering Major\nI'd skydive anywhere as long as it's with Zane"
+          bio="4th year\nMechnical Engineering Major\nI'd skydive anywhere as long as it's with Zane."
           img_name="Isaac Schultz - Treasurer.png"
         />
         <ProfileCard
           title="Ahmed AlBadrani"
           subtitle="Jump Day Coordinator"
-          bio="2nd year\nPolitical Science Major\nI'd skydive anywhere near 1600 Pennsylvania Avenue"
+          bio="2nd year\nPolitical Science Major\nI'd skydive anywhere near 1600 Pennsylvania Avenue."
           img_name="Ahmed AlBadrani - Jump Day Coordinator.png"
         />
         <ProfileCard
           title="Zane Levine"
           subtitle="Licensing Coordinator"
-          bio="4th year\nMarine Science\nIf I could skydive anywhere it would probably have to be over the Great Blue Hole in Belize"
+          bio="4th year\nMarine Science\nIf I could skydive anywhere it would probably have to be over the Great Blue Hole in Belize."
           img_name="Zane Levine - Licensing Coordinator .png"
         />
       </Flex>
