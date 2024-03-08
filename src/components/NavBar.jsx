@@ -78,27 +78,29 @@ const NavBar = () => {
               aria-label={'Toggle Navigation'}
             />
           )}
-          <Link to="/">
-            {/* <Button variant="nav"> AirBears </Button> */}
-            <Button variant="nav">
-              {' '}
-              {!isMobile && (
-                <Image
-                  src="/assets/Frame 9.png"
-                  boxSize="full"
-                  alt="AirBears"
-                />
-              )}
-              {isMobile && (
-                <Image
-                  src="/airbears-logo-512.png"
-                  boxSize="full"
-                  alt="AirBears"
-                />
-              )}
-              {/* Air Bears */}
-            </Button>
-          </Link>
+          <Box maxW="100%" maxH="100%">
+            <Link to="/">
+              {/* <Button variant="nav"> AirBears </Button> */}
+              <Button variant="nav">
+                {' '}
+                {!isMobile && (
+                  <Image
+                    src="/assets/Frame 9.png"
+                    boxSize="full"
+                    alt="AirBears"
+                  />
+                )}
+                {isMobile && (
+                  <Image
+                    src="/airbears-logo-512.png"
+                    boxSize="full"
+                    alt="AirBears"
+                  />
+                )}
+                {/* Air Bears */}
+              </Button>
+            </Link>
+          </Box>
           {/* Desktop Links */}
           {!isMobile && <NavBarItems isMobile={isMobile} />}
         </Flex>
